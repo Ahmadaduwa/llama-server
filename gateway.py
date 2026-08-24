@@ -82,30 +82,31 @@ class SmartLLMManager:
         
         model_9b = os.path.join(base_dir, "model\\Qwen3.5-9B-GGUF\\Qwen3.5-9B-Q4_K_M.gguf")
         model_9b_uncen = os.path.join(base_dir, "model\\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf")
-        model_9b_claude = os.path.join(base_dir, "model\\Qwen3.5-9B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING-MAX-NEOCODE-Imatrix-GGUF\\Qwen3.5-9B-Claude-4.6-OS-AV-H-UNCENSORED-THINK-D_AU-Q4_K_S-imat.gguf")
+        model_ornith = os.path.join(base_dir, "model\\Ornith-1.5-9B-uncensored\\Ornith-1.5-9B-uncensored.Q4_K_M.gguf")
+        model_ornith_i1 = os.path.join(base_dir, "model\\Ornith-1.5-9B-uncensored-i1-GGUF\\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf")
+    
         model_4b = os.path.join(base_dir, "model\\Qwen3.5-4B-GGUF\\Qwen3.5-4B-Q4_K_M.gguf") # Adjust to match the actual name
         mmproj_4b = os.path.join(base_dir, "model\\Qwen3.5-4B-GGUF\\mmproj-Qwen3.5-4B-BF16.gguf")
         
         # 🟢 Tier command repository (running in the background on port 8080!)
         # Prefix with & so PowerShell understands commands with quotes
         self.configs = {
-            "analyst-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
 
-            "analyst-32k-claude": f'& "{exe}" -m "{model_9b_claude}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-65k-claude": f'& "{exe}" -m "{model_9b_claude}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-132k-claude": f'& "{exe}" -m "{model_9b_claude}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-192k-claude": f'& "{exe}" -m "{model_9b_claude}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-
-            "analyst-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "analyst-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
 
             # 4B text model  (lighter/faster than the 9B tiers)
-            "omni-vision-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja'
+            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja'
         }
 
     # Hard cap on how long to wait for a tier's /health after launch (Gateway §5):
@@ -123,27 +124,27 @@ class SmartLLMManager:
         """The next-smaller-context tier of the SAME model family (Gateway §5 one-way
         auto-downgrade on VRAM pressure), or None if already the smallest. Preserves the
         variant suffix (``''`` / ``-claude`` / ``-uncen``); never upgrades."""
-        m = re.match(r"analyst-(\d+)k(-claude|-uncen)?$", model_name or "")
+        m = re.match(r"Qwen3.5-9B-(\d+)k(-claude|-uncen)?$", model_name or "")
         if not m:
             return None
         ctx, suffix = int(m.group(1)), (m.group(2) or "")
-        smaller = sorted((int(re.match(r"analyst-(\d+)k", k).group(1))
+        smaller = sorted((int(re.match(r"Qwen3.5-9B-(\d+)k", k).group(1))
                           for k in self.configs
-                          if re.match(rf"analyst-\d+k{re.escape(suffix)}$", k)),
+                          if re.match(rf"Qwen3.5-9B-\d+k{re.escape(suffix)}$", k)),
                          reverse=True)
         nxt = next((c for c in smaller if c < ctx), None)
-        return f"analyst-{nxt}k{suffix}" if nxt is not None else None
+        return f"Qwen3.5-9B-{nxt}k{suffix}" if nxt is not None else None
 
     async def ensure_model(self, model_name):
         if not hasattr(self, 'lock'):
             self.lock = asyncio.Lock()
 
         async with self.lock:
-            # If no model name is specified, or an unknown name is provided, use the default: analyst-65k
+            # If no model name is specified, or an unknown name is provided, use the default: Ornith-1.5-9B-65k
             if model_name not in self.configs:
                 ts_print(f"⚠️ Model '{model_name}' is not in the known tier list ({', '.join(self.configs)}) "
-                      f"-> Defaulting to 'analyst-65k'")
-                model_name = "analyst-65k"
+                      f"-> Defaulting to 'Ornith-1.5-9B-65k'")
+                model_name = "Ornith-1.5-9B-65k"
 
             if self.current_model == model_name and self.current_process is not None:
                 # Auto-recovery: the requested model is nominally loaded, but the
@@ -299,9 +300,9 @@ async def v1_props():
 async def ollama_show(request: Request):
     try:
         body = await request.json()
-        model_name = body.get("name", "analyst-65k").replace(":latest", "")
+        model_name = body.get("name", "Ornith-1.5-9B-65k").replace(":latest", "")
     except:
-        model_name = "analyst-65k"
+        model_name = "Ornith-1.5-9B-65k"
         
     cmd = manager.configs.get(model_name, "")
     ctx_size = 8192
@@ -342,11 +343,11 @@ async def proxy_to_llm(path: str, request: Request):
         manager.active_requests += 1
         try:
             json_data = await request.json()
-            requested_model = json_data.get("model", "analyst-65k").replace(":latest", "")
+            requested_model = json_data.get("model", "Ornith-1.5-9B-65k").replace(":latest", "")
             await manager.ensure_model(requested_model)
         except Exception as e:
             ts_print("Error parsing json:", e)
-            await manager.ensure_model("analyst-65k")
+            await manager.ensure_model("Ornith-1.5-9B-65k")
 
 
     # 2. Convert Ollama Request format to OpenAI for llama-server.exe and correct the model name
