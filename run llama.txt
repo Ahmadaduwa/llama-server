@@ -1,15 +1,15 @@
 65,536 (65k) — "High-Precision & High-Speed Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10
+./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja
+./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8
 
 131,072 (132k) — "High-Precision & High-Speed Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 131072 -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 10
+./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja
+./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 131072 -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8
 
 196,608 (196k) — "Deep-Context & Long-Horizon Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 196608 -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10
+./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja
+./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 196608 -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8
 
 Qwen 3.8 27B Uncensored Cyber (IQ4_XS) — 65,536 (65k) "Hybrid Offload + MTP Speculative Setup"
-./llama-server.exe -m model\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2
-./llama-cli.exe -m model\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --jinja --spec-type draft-mtp --spec-draft-n-max 2 -cnv
+./llama-server.exe -m model\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2
+./llama-cli.exe -m model\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --jinja --spec-type draft-mtp --spec-draft-n-max 2 -cnv

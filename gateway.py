@@ -289,9 +289,9 @@ class SmartLLMManager:
         # Prefix with & so PowerShell understands commands with quotes.
         self.configs = {
             # Qwen 3.8 27B Uncensored Cyber (IQ4_XS) - 65K Context Budget, KV Cache 4-bit, 26 Layers GPU Offload, 8-10 CPU Threads, MTP Speculative Decoding (Max Draft 2)
-            "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
-            "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
-            "Qwen3.8-27B-16k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-16k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
 
             # Ornith 1.5 9B Tiers
             "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
