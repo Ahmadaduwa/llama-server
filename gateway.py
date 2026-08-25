@@ -6,7 +6,7 @@
 #     "uvicorn",
 #     "python-dotenv",
 # ]
-# ///
+# /// this run on other computer 100.119.233.96
 
 import subprocess
 import time
@@ -45,7 +45,6 @@ async def verify_api_key(request: Request, call_next):
     if request.method == "OPTIONS":
         return await call_next(request)
         
-    # Safe services (status check / model list) are allowed without a Key
     safe_paths = [
         "/api/tags",
         "/v1/models",
@@ -54,7 +53,10 @@ async def verify_api_key(request: Request, call_next):
         "/version",
         "/v1/props",
         "/props",
-        "/api/show"
+        "/api/show",
+        "/health",
+        "/slots",
+        "/metrics",
     ]
     if request.url.path in safe_paths:
         return await call_next(request)
@@ -91,22 +93,22 @@ class SmartLLMManager:
         # 🟢 Tier command repository (running in the background on port 8080!)
         # Prefix with & so PowerShell understands commands with quotes
         self.configs = {
-            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
 
-            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
 
             # 4B text model  (lighter/faster than the 9B tiers)
-            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 4 -tb 8 --parallel 1 --cont-batching --jinja'
+            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja'
         }
 
     # Hard cap on how long to wait for a tier's /health after launch (Gateway §5):
@@ -123,35 +125,38 @@ class SmartLLMManager:
     def _downgrade_tier(self, model_name: str):
         """The next-smaller-context tier of the SAME model family (Gateway §5 one-way
         auto-downgrade on VRAM pressure), or None if already the smallest. Preserves the
-        variant suffix (``''`` / ``-claude`` / ``-uncen``); never upgrades."""
-        m = re.match(r"Qwen3.5-9B-(\d+)k(-claude|-uncen)?$", model_name or "")
+        variant suffix; never upgrades."""
+        m = re.match(r"^(.*?)-(\d+)k(.*)$", model_name or "")
         if not m:
             return None
-        ctx, suffix = int(m.group(1)), (m.group(2) or "")
-        smaller = sorted((int(re.match(r"Qwen3.5-9B-(\d+)k", k).group(1))
+        prefix, ctx, suffix = m.group(1), int(m.group(2)), (m.group(3) or "")
+        smaller = sorted((int(re.match(rf"^{re.escape(prefix)}-(\d+)k", k).group(1))
                           for k in self.configs
-                          if re.match(rf"Qwen3.5-9B-\d+k{re.escape(suffix)}$", k)),
+                          if re.match(rf"^{re.escape(prefix)}-\d+k{re.escape(suffix)}$", k)),
                          reverse=True)
         nxt = next((c for c in smaller if c < ctx), None)
-        return f"Qwen3.5-9B-{nxt}k{suffix}" if nxt is not None else None
+        return f"{prefix}-{nxt}k{suffix}" if nxt is not None else None
 
     async def ensure_model(self, model_name):
         if not hasattr(self, 'lock'):
             self.lock = asyncio.Lock()
 
         async with self.lock:
-            # If no model name is specified, or an unknown name is provided, use the default: Ornith-1.5-9B-65k
-            if model_name not in self.configs:
-                ts_print(f"⚠️ Model '{model_name}' is not in the known tier list ({', '.join(self.configs)}) "
-                      f"-> Defaulting to 'Ornith-1.5-9B-65k'")
-                model_name = "Ornith-1.5-9B-65k"
+            # Normalize model name (strip litellm openai/ prefix, :latest suffix, whitespace)
+            clean_name = (model_name or "").replace("openai/", "").replace(":latest", "").strip()
+            if clean_name in self.configs:
+                model_name = clean_name
+            else:
+                # Case-insensitive check
+                case_map = {k.lower(): k for k in self.configs}
+                if clean_name.lower() in case_map:
+                    model_name = case_map[clean_name.lower()]
+                else:
+                    ts_print(f"⚠️ Model '{model_name}' is not in the known tier list ({', '.join(self.configs)}) "
+                          f"-> Defaulting to 'Ornith-1.5-9B-65k'")
+                    model_name = "Ornith-1.5-9B-65k"
 
             if self.current_model == model_name and self.current_process is not None:
-                # Auto-recovery: the requested model is nominally loaded, but the
-                # llama-server child may have died (e.g. VRAM OOM). If the process
-                # exited or /health is unresponsive, force a reload instead of
-                # forwarding to a dead backend (which surfaced to the agent as
-                # "Cannot connect to Smart Gateway" and stalled the whole run).
                 proc_dead = self.current_process.poll() is not None
                 if proc_dead or not self._server_healthy():
                     ts_print("⚠️ [Smart Gateway] Backing llama-server is not responding "
@@ -162,18 +167,10 @@ class SmartLLMManager:
                     return
 
             self.unload()
-            # Launch the requested tier; if it does not become healthy within the HARD
-            # timeout (almost always a VRAM OOM for a too-large context), auto-downgrade
-            # ONE step to the next-smaller-context tier of the same family and retry —
-            # a bounded, one-way degrade so the run continues DEGRADED instead of hanging
-            # forever on a dead backend (Gateway §5).
             while True:
                 ts_print(f"\n🚀 [Smart Gateway] Loading [{model_name}] into VRAM...")
-                # Delay 2s so Windows fully frees VRAM from the previous instance
-                # (prevents RAM spikes that act like two instances at once).
                 await asyncio.sleep(2)
                 cmd = self.configs[model_name]
-                # Run directly via PowerShell instead of shell=True (which is cmd.exe).
                 self.current_process = subprocess.Popen(["powershell", "-Command", cmd],
                                                         stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                 self.current_model = model_name
@@ -192,7 +189,7 @@ class SmartLLMManager:
                         pass
                     await asyncio.sleep(1)
                 if ready:
-                    ts_print(f"✅ [Smart Gateway] Successfully loaded [{model_name}]! Ready to forward data to Hermes Agent")
+                    ts_print(f"✅ [Smart Gateway] Successfully loaded [{model_name}]! Ready to forward data to agent")
                     break
                 # Not healthy within the hard timeout (or the process died) → one-way downgrade.
                 self.unload()
@@ -339,36 +336,44 @@ async def proxy_to_llm(path: str, request: Request):
     
     # 1. Check and load the model
     is_chat = "chat/completions" in path or "api/chat" in path or "api/generate" in path or "v1/completions" in path
+    is_ollama = (path in ["api/chat", "api/generate"])
+    is_stream = False
+    req_data = {}
+
+    if request.method in ["POST", "PUT"]:
+        try:
+            req_data = await request.json()
+            is_stream = bool(req_data.get("stream", False))
+        except Exception:
+            pass
+
     if is_chat and request.method == "POST":
         manager.active_requests += 1
+        requested_model = req_data.get("model", "Ornith-1.5-9B-65k") if isinstance(req_data, dict) else "Ornith-1.5-9B-65k"
         try:
-            json_data = await request.json()
-            requested_model = json_data.get("model", "Ornith-1.5-9B-65k").replace(":latest", "")
             await manager.ensure_model(requested_model)
         except Exception as e:
-            ts_print("Error parsing json:", e)
+            ts_print("Error ensuring model:", e)
             await manager.ensure_model("Ornith-1.5-9B-65k")
-
 
     # 2. Convert Ollama Request format to OpenAI for llama-server.exe and correct the model name
     target_path = path
-    if request.method in ["POST", "PUT"]:
+    if request.method in ["POST", "PUT"] and isinstance(req_data, dict) and req_data:
         try:
             # Force the model name to "default" so llama-server.exe does not reject the Request
-            req_data = await request.json()
             if "model" in req_data:
                 req_data["model"] = "default"
 
-                # Apply Qwen official default sampling parameters if not explicitly provided
-                req_data.setdefault("top_p", 0.8)
-                req_data.setdefault("top_k", 20)
-                req_data.setdefault("min_p", 0.0)
-                req_data.setdefault("presence_penalty", 0.0)
-                req_data.setdefault("repetition_penalty", 1.0)
+            # Apply Qwen/Ornith official default sampling parameters if not explicitly provided
+            req_data.setdefault("top_p", 0.8)
+            req_data.setdefault("top_k", 20)
+            req_data.setdefault("min_p", 0.0)
+            req_data.setdefault("presence_penalty", 0.0)
+            req_data.setdefault("repetition_penalty", 1.0)
 
-                body = json.dumps(req_data).encode("utf-8")
-        except:
-            pass
+            body = json.dumps(req_data).encode("utf-8")
+        except Exception as e:
+            ts_print("Error modifying request body:", e)
 
     if path == "api/chat":
         target_path = "v1/chat/completions"
@@ -378,34 +383,90 @@ async def proxy_to_llm(path: str, request: Request):
     # 3. Forward Request to llama-server (port 8080)
     url = f"http://localhost:8080/{target_path}"
     headers = {key: value for key, value in request.headers.items() if key.lower() not in ['host', 'content-length']}
-    
+
     try:
-        # Send the Request and wait to receive Headers and Status Code first
         resp = session.request(
             method=request.method,
             url=url,
             headers=headers,
             data=body,
             params=request.query_params,
-            stream=True,
-            timeout=600
+            stream=is_stream,
+            timeout=600,
         )
     except Exception as e:
         ts_print(f"Connection to llama-server failed: {e}")
+        if is_chat and request.method == "POST":
+            manager.active_requests -= 1
+            manager.last_active_time = time.time()
         return Response(content=f'{{"error": "Connection to llama-server failed: {e}"}}', status_code=502)
 
     # If llama-server returns an Error (e.g. 400 Bad Request), return it immediately
     if resp.status_code != 200:
         content = resp.content
         resp.close()
+        if is_chat and request.method == "POST":
+            manager.active_requests -= 1
+            manager.last_active_time = time.time()
         return Response(content=content, status_code=resp.status_code, headers=dict(resp.headers))
 
-    # 4. Use StreamingResponse and convert the Response back to Ollama Format
+    # 4a. Handle NON-STREAMING responses
+    if not is_stream:
+        try:
+            resp_json = resp.json()
+            resp.close()
+
+            # For Ollama callers (/api/chat, /api/generate)
+            if is_ollama:
+                choices = resp_json.get("choices") or [{}]
+                first_choice = choices[0] if choices else {}
+                msg = first_choice.get("message") or {}
+                content = (msg.get("content") or "").strip()
+                if not content:
+                    content = (msg.get("reasoning_content") or "").strip()
+                ollama_resp = {
+                    "model": manager.current_model,
+                    "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "message": {"role": "assistant", "content": content},
+                    "done": True,
+                }
+                return JSONResponse(content=ollama_resp, status_code=resp.status_code)
+
+            # For OpenAI callers (/v1/chat/completions, /v1/completions)
+            # If the thinking model emitted all tokens in reasoning_content and content is empty,
+            # recover the JSON block or content from reasoning_content so standard clients get valid content.
+            choices = resp_json.get("choices") or []
+            if choices and isinstance(choices[0], dict):
+                first_msg = choices[0].get("message") or {}
+                content = (first_msg.get("content") or "").strip()
+                reasoning = (first_msg.get("reasoning_content") or "").strip()
+                if not content and reasoning:
+                    json_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", reasoning, re.DOTALL)
+                    if not json_match:
+                        json_match = re.search(r"(\{[\s\S]*\})", reasoning)
+                    if json_match:
+                        try:
+                            json.loads(json_match.group(1))
+                            first_msg["content"] = json_match.group(1)
+                        except Exception:
+                            first_msg["content"] = reasoning
+                    else:
+                        first_msg["content"] = reasoning
+
+            return JSONResponse(content=resp_json, status_code=resp.status_code)
+        except Exception as e:
+            content = resp.content
+            resp.close()
+            return Response(content=content, status_code=resp.status_code, media_type="application/json")
+        finally:
+            if is_chat and request.method == "POST":
+                manager.active_requests -= 1
+                manager.last_active_time = time.time()
+
+    # 4b. Handle STREAMING responses
     def generate():
         try:
-            is_ollama = (path in ["api/chat", "api/generate"])
             if not is_ollama:
-                # For OpenAI Endpoint (/v1/...), let the raw Stream pass through unmodified (prevents empty line bugs)
                 for chunk in resp.iter_content(chunk_size=1024):
                     if chunk:
                         yield chunk
@@ -413,8 +474,6 @@ async def proxy_to_llm(path: str, request: Request):
                 for line in resp.iter_lines():
                     if not line:
                         continue
-                    
-                    # Convert OpenAI format (data: {...}) to Ollama JSON
                     decoded = line.decode('utf-8')
                     if decoded.startswith('data: '):
                         json_str = decoded[6:]
@@ -425,20 +484,22 @@ async def proxy_to_llm(path: str, request: Request):
                             data = json.loads(json_str)
                             if "api/chat" in path:
                                 content = data['choices'][0]['delta'].get('content', '')
+                                if not content:
+                                    content = data['choices'][0]['delta'].get('reasoning_content', '')
                                 ollama_chunk = {
                                     "model": data.get("model", manager.current_model),
                                     "message": {"role": "assistant", "content": content},
-                                    "done": False
+                                    "done": False,
                                 }
                             else:
                                 content = data['choices'][0].get('text', '')
                                 ollama_chunk = {
                                     "model": data.get("model", manager.current_model),
                                     "response": content,
-                                    "done": False
+                                    "done": False,
                                 }
                             yield (json.dumps(ollama_chunk) + "\n").encode('utf-8')
-                        except Exception as e:
+                        except Exception:
                             pass
         except Exception as e:
             ts_print(f"Proxy Streaming Error: {e}")
@@ -448,8 +509,12 @@ async def proxy_to_llm(path: str, request: Request):
             if is_chat and request.method == "POST":
                 manager.active_requests -= 1
                 manager.last_active_time = time.time()
-            
-    return StreamingResponse(generate(), status_code=resp.status_code, media_type="text/event-stream" if "v1/" in path else "application/x-ndjson")
+
+    return StreamingResponse(
+        generate(),
+        status_code=resp.status_code,
+        media_type="text/event-stream" if "v1/" in path else "application/x-ndjson",
+    )
 
 if __name__ == "__main__":
     ts_print("🔥 Starting Pentest Smart Gateway on port 11434 (Mocking Ollama)...")
