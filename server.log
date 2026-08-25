@@ -9,3 +9,8 @@ INFO:     Started server process [17104]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-08-26 03:05:15] Test log message
+[2026-08-26 03:05:27] Test log message
+Disconnected test log 1
+Disconnected test log 1
+Disconnected test log 2

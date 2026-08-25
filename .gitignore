@@ -1,1 +1,4 @@
 /.env
+*.log
+gateway_status.json
+__pycache__/
