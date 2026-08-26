@@ -188,3 +188,185 @@ Disconnected test log 2
 [2026-08-26 08:39:42] INFO: Application startup complete.
 [2026-08-26 08:39:42] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
 [2026-08-26 08:39:42] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-08-26 08:40:34] INFO: 100.124.101.126:41838 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 08:40:50] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:40:50] 
+🚀 [Smart Gateway] Loading [Ornith-1.5-9B-i1-65k] into VRAM...
+[2026-08-26 08:41:00] ✅ [Smart Gateway] Successfully loaded [Ornith-1.5-9B-i1-65k] in 6s! Ready to forward.
+[2026-08-26 08:41:01] 📤 [100.124.101.126] Completed v1/chat/completions in 10.82s
+[2026-08-26 08:41:01] INFO: 100.124.101.126:51844 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:41:24] INFO: 100.124.101.126:38792 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 08:41:26] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:41:35] 📤 [100.124.101.126] Completed v1/chat/completions in 8.46s
+[2026-08-26 08:41:35] INFO: 100.124.101.126:38804 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:41:43] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:41:45] 📤 [100.124.101.126] Completed v1/chat/completions in 2.59s
+[2026-08-26 08:41:45] INFO: 100.124.101.126:38704 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:41:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:41:51] 📤 [100.124.101.126] Completed v1/chat/completions in 5.38s
+[2026-08-26 08:41:51] INFO: 100.124.101.126:38704 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:41:52] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:42:55] 📤 [100.124.101.126] Completed v1/chat/completions in 63.59s
+[2026-08-26 08:42:56] INFO: 100.124.101.126:38704 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:42:56] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:43:04] 📤 [100.124.101.126] Completed v1/chat/completions in 7.77s
+[2026-08-26 08:43:04] INFO: 100.124.101.126:38704 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:43:04] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:43:06] 📤 [100.124.101.126] Completed v1/chat/completions in 1.55s
+[2026-08-26 08:43:06] INFO: 100.124.101.126:38704 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:43:06] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:45:07] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:46:31] 📤 [100.124.101.126] Completed v1/chat/completions in 204.75s
+[2026-08-26 08:46:46] 📤 [100.124.101.126] Completed v1/chat/completions in 98.95s
+[2026-08-26 08:46:46] INFO: 100.124.101.126:56986 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 08:46:46] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:48:46] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:50:09] 📤 [100.124.101.126] Completed v1/chat/completions in 203.59s
+[2026-08-26 08:50:48] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:52:49] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 08:53:36] 📤 [100.124.101.126] Completed v1/chat/completions in 290.01s
+[2026-08-26 08:58:12] 📤 [100.124.101.126] Completed v1/chat/completions in 444.61s
+[2026-08-26 09:00:27] 📤 [100.124.101.126] Completed v1/chat/completions in 458.22s
+[2026-08-26 09:00:52] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:00:52] 💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...
+[2026-08-26 09:00:55] 
+🚀 [Smart Gateway] Loading [Qwen3.8-27B-65k-cyber] into VRAM...
+[2026-08-26 09:01:47] ✅ [Smart Gateway] Successfully loaded [Qwen3.8-27B-65k-cyber] in 49s! Ready to forward.
+[2026-08-26 09:01:55] 📤 [100.124.101.126] Completed v1/chat/completions in 63.26s
+[2026-08-26 09:01:55] INFO: 100.124.101.126:58328 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:05:23] INFO: 100.124.101.126:60744 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 09:05:26] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:06:40] 📤 [100.124.101.126] Completed v1/chat/completions in 74.12s
+[2026-08-26 09:06:40] INFO: 100.124.101.126:60748 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:06:48] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:07:15] 📤 [100.124.101.126] Completed v1/chat/completions in 27.50s
+[2026-08-26 09:07:15] INFO: 100.124.101.126:57954 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:07:16] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:08:37] 📤 [100.124.101.126] Completed v1/chat/completions in 81.50s
+[2026-08-26 09:08:37] INFO: 100.124.101.126:57954 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:08:38] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:10:39] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:12:40] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:14:41] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:16:41] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:18:43] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:20:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:21:47] 📤 [100.124.101.126] Completed v1/chat/completions in 789.07s
+[2026-08-26 09:22:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:24:46] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:26:50] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:28:51] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:30:52] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:32:51] 📤 [100.124.101.126] Completed v1/chat/completions in 1332.23s
+[2026-08-26 09:33:00] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:35:01] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:37:02] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:39:02] INFO: 100.124.101.126:45778 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 09:39:02] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:41:02] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:43:04] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:45:05] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:47:05] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:49:06] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:51:08] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:53:09] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:55:10] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 09:56:05] 📤 [100.124.101.126] Completed v1/chat/completions in 2605.30s
+[2026-08-26 09:58:35] INFO: 100.124.101.126:42020 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 09:58:43] INFO: 100.124.101.126:53794 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 09:58:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 09:58:45] 💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...
+[2026-08-26 09:58:48] 
+🚀 [Smart Gateway] Loading [Ornith-1.5-9B-i1-65k] into VRAM...
+[2026-08-26 09:58:50] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:50] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:50] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:50] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:51] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:52] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:53] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:53] ❌ Connection to llama-server failed: 
+[2026-08-26 09:58:53] ❌ Connection to llama-server failed: 
+[2026-08-26 09:59:00] ✅ [Smart Gateway] Successfully loaded [Ornith-1.5-9B-i1-65k] in 6s! Ready to forward.
+[2026-08-26 09:59:05] 📤 [100.124.101.126] Completed v1/chat/completions in 20.66s
+[2026-08-26 09:59:05] INFO: 100.124.101.126:53800 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:59:13] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 09:59:18] 📤 [100.124.101.126] Completed v1/chat/completions in 5.23s
+[2026-08-26 09:59:18] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:59:18] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 09:59:27] 📤 [100.124.101.126] Completed v1/chat/completions in 9.20s
+[2026-08-26 09:59:28] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 09:59:29] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:00:11] 📤 [100.124.101.126] Completed v1/chat/completions in 42.60s
+[2026-08-26 10:00:11] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:00:11] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:03:46] 📤 [100.124.101.126] Completed v1/chat/completions in 214.59s
+[2026-08-26 10:03:46] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:03:46] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:04:45] 📤 [100.124.101.126] Completed v1/chat/completions in 59.25s
+[2026-08-26 10:04:45] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:04:50] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:06:07] 📤 [100.124.101.126] Completed v1/chat/completions in 76.93s
+[2026-08-26 10:06:07] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:06:08] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:06:54] 📤 [100.124.101.126] Completed v1/chat/completions in 46.43s
+[2026-08-26 10:06:54] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:06:54] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:14:14] 📤 [100.124.101.126] Completed v1/chat/completions in 439.82s
+[2026-08-26 10:14:14] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:14:14] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:17:16] 📤 [100.124.101.126] Completed v1/chat/completions in 181.23s
+[2026-08-26 10:17:16] INFO: 100.124.101.126:54244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:17:17] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:27:17] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:28:07] 📤 [100.124.101.126] Completed v1/chat/completions in 650.48s
+[2026-08-26 10:28:53] 📤 [100.124.101.126] Completed v1/chat/completions in 96.25s
+[2026-08-26 10:28:54] INFO: 100.124.101.126:60054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:28:54] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:28:58] 📤 [100.124.101.126] Completed v1/chat/completions in 4.37s
+[2026-08-26 10:28:58] INFO: 100.124.101.126:60054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:28:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:38:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:39:50] 📤 [100.124.101.126] Completed v1/chat/completions in 651.05s
+[2026-08-26 10:44:08] 📤 [100.124.101.126] Completed v1/chat/completions in 308.53s
+[2026-08-26 10:44:08] INFO: 100.124.101.126:52054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:44:08] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:44:12] 📤 [100.124.101.126] Completed v1/chat/completions in 3.63s
+[2026-08-26 10:44:12] INFO: 100.124.101.126:52054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 10:44:12] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:54:13] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 10:55:04] 📤 [100.124.101.126] Completed v1/chat/completions in 651.82s
+[2026-08-26 11:04:14] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-26 11:06:46] 📤 [100.124.101.126] Completed v1/chat/completions in 753.25s
+[2026-08-26 11:08:01] 📤 [100.124.101.126] Completed v1/chat/completions in 227.64s
+[2026-08-26 11:18:16] ⏳ [Smart Gateway] Idle > 10 min -> unloading model to save VRAM
+[2026-08-26 11:18:16] 💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...
+[2026-08-26 17:42:48] INFO: 100.124.101.126:53246 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 18:43:26] INFO: Shutting down
+[2026-08-26 18:43:26] INFO: Shutting down
+[2026-08-26 18:43:26] INFO: Waiting for application shutdown.
+[2026-08-26 18:43:26] INFO: Waiting for application shutdown.
+[2026-08-26 18:43:27] INFO: Application shutdown complete.
+[2026-08-26 18:43:27] INFO: Application shutdown complete.
+[2026-08-26 18:43:27] INFO: Finished server process [57588]
+[2026-08-26 18:43:27] INFO: Finished server process [57588]
+[2026-08-26 18:43:29] 🔥 Starting Pentest Smart Gateway (async, non-blocking) on port 11434 (mocking Ollama)...
+[2026-08-26 18:43:29] 📡 Shared Drive Log: Z:\server.log
+[2026-08-26 18:43:30] 📁 Local Fallback Log: server.log
+[2026-08-26 18:43:30] 📊 Status JSON: Z:\gateway_status.json
+[2026-08-26 18:43:30] INFO: Application startup complete.
+[2026-08-26 18:43:30] INFO: Application startup complete.
+[2026-08-26 18:43:30] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-08-26 18:43:30] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)

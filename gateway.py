@@ -287,32 +287,42 @@ class SmartLLMManager:
 
         # 🟢 Tier command repository (llama-server runs in the background on port 8080).
         # Prefix with & so PowerShell understands commands with quotes.
+        #
+        # --cache-reuse 256 (all tiers): LOSSLESS prompt-cache reuse. At ~4 tok/s on the partial-offload
+        # 27B, prefill of the prompt dominates a step. Consecutive requests to the single slot share a
+        # large identical PREFIX — the role system prompt, and especially the EXECUTOR's up-to-4-retry loop
+        # which re-sends the SAME prompt — so reusing the cached KV for the common chunks (min 256 tokens)
+        # skips recomputing them. The generated output is byte-identical; only wasted prefill is removed.
+        # --spec-type draft-mtp (27B only): the Qwen3.8 generation ships MTP (multi-token-prediction) heads,
+        # so self-speculative decode is lossless and free here. The 9B tiers (Qwen3.5 / Ornith-1.5) are an
+        # older generation without MTP, so the same flag would fail to load — speeding their DECODE would
+        # need a separate small draft model (`-md <draft.gguf> --draft-max N`); left off until one is added.
         self.configs = {
             # Qwen 3.8 27B Uncensored Cyber (IQ4_XS) - 65K Context Budget, KV Cache 4-bit, 26 Layers GPU Offload, 8-10 CPU Threads, MTP Speculative Decoding (Max Draft 2)
-            "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
-            "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
-            "Qwen3.8-27B-16k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256 --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256 --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-16k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256 --spec-type draft-mtp --spec-draft-n-max 2',
 
             # Ornith 1.5 9B Tiers
-            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
 
             # Qwen 3.5 9B Uncensored Tiers
-            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
 
             # Qwen 3.5 9B Standard Tiers
-            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
 
             # Qwen 3.5 4B Vision/Base Tier
-            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256',
         }
 
     LOAD_TIMEOUT_SECONDS = int(os.getenv("GATEWAY_LOAD_TIMEOUT", "180"))
