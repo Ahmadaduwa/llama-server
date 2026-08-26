@@ -289,30 +289,30 @@ class SmartLLMManager:
         # Prefix with & so PowerShell understands commands with quotes.
         self.configs = {
             # Qwen 3.8 27B Uncensored Cyber (IQ4_XS) - 65K Context Budget, KV Cache 4-bit, 26 Layers GPU Offload, 8-10 CPU Threads, MTP Speculative Decoding (Max Draft 2)
-            "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
-            "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
-            "Qwen3.8-27B-16k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
+            "Qwen3.8-27B-16k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2',
 
             # Ornith 1.5 9B Tiers
-            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-32k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-65k": f'& "{exe}" -m "{model_ornith}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-i1-32k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Ornith-1.5-9B-i1-65k": f'& "{exe}" -m "{model_ornith_i1}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
 
             # Qwen 3.5 9B Uncensored Tiers
-            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-65k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-132k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-192k-uncen": f'& "{exe}" -m "{model_9b_uncen}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
 
             # Qwen 3.5 9B Standard Tiers
-            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
-            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-32k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-65k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-132k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-9B-192k": f'& "{exe}" -m "{model_9b}" --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
 
             # Qwen 3.5 4B Vision/Base Tier
-            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja',
+            "Qwen3.5-4B-64k": f'& "{exe}" -m "{model_4b}" --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja',
         }
 
     LOAD_TIMEOUT_SECONDS = int(os.getenv("GATEWAY_LOAD_TIMEOUT", "180"))
@@ -340,6 +340,39 @@ class SmartLLMManager:
         )
         nxt = next((c for c in smaller if c < ctx), None)
         return f"{prefix}-{nxt}k{suffix}" if nxt is not None else None
+
+    @staticmethod
+    def _kill_orphan_llama_servers():
+        """Force-kill ANY running llama-server by name, regardless of whether this gateway tracks it.
+
+        On a COLD load ``unload()`` no-ops (it guards on ``current_process``/``_llama_log_handle`` being
+        set), so an ORPHAN llama-server left by a prior gateway/run keeps holding port 8080 and its VRAM.
+        The freshly launched llama-server then cannot bind the port and exits within a few seconds — the
+        observed "died in ~5s" crash that was mislabeled a 180s VRAM-OOM timeout. Sweeping by name before
+        every launch guarantees a clean slate. Safe because we only call it when we are about to (re)launch.
+        """
+        try:
+            subprocess.run(
+                ["powershell", "-Command", "Stop-Process -Name 'llama-server' -Force -ErrorAction SilentlyContinue"],
+                check=False,
+            )
+        except Exception as e:
+            ts_print(f"⚠️ [Smart Gateway] orphan sweep failed: {e}")
+
+    @staticmethod
+    def _llama_log_tail(n: int = 25) -> str:
+        """The last ``n`` lines of the backing llama-server's own log — the REAL reason a launch crashed
+        (bad model path, port already in use, out-of-memory, bad flag). Surfacing it in the gateway log is
+        what turns an opaque '404 / failed to load' into an actionable error."""
+        try:
+            if not os.path.exists(LOCAL_LLAMA_LOG_FILE):
+                return "(no llama-server log file yet)"
+            with open(LOCAL_LLAMA_LOG_FILE, "r", encoding="utf-8", errors="replace") as f:
+                lines = f.readlines()
+            tail = "".join(lines[-n:]).strip()
+            return tail or "(llama-server log empty)"
+        except Exception as e:
+            return f"(could not read llama-server log: {e})"
 
     async def ensure_model(self, model_name):
         async with self.lock:
@@ -386,6 +419,9 @@ class SmartLLMManager:
             while True:
                 ts_print(f"\n🚀 [Smart Gateway] Loading [{model_name}] into VRAM...")
                 update_status("loading", {"loading_model": model_name})
+                # Clear any ORPHAN llama-server (untracked, e.g. from a prior gateway) before launching, so
+                # the new process can actually bind port 8080 / claim VRAM instead of dying on a conflict.
+                self._kill_orphan_llama_servers()
                 await asyncio.sleep(2)
                 cmd = self.configs[model_name]
 
@@ -410,40 +446,67 @@ class SmartLLMManager:
                 self.current_model = model_name
                 self.last_active_time = time.time()
 
-                deadline = time.time() + self.LOAD_TIMEOUT_SECONDS
+                start = time.time()
+                deadline = start + self.LOAD_TIMEOUT_SECONDS
                 ready = False
+                crashed = False
+                exit_code = None
                 while time.time() < deadline:
-                    if self.current_process.poll() is not None:
-                        break  # child exited (OOM / error) → downgrade
+                    exit_code = self.current_process.poll()
+                    if exit_code is not None:
+                        crashed = True   # child exited on its own → a crash, NOT a load timeout
+                        break
                     if await self._server_healthy():
                         ready = True
                         break
                     await asyncio.sleep(1)
 
                 if ready:
-                    ts_print(f"✅ [Smart Gateway] Successfully loaded [{model_name}]! Ready to forward.")
+                    ts_print(f"✅ [Smart Gateway] Successfully loaded [{model_name}] in {int(time.time() - start)}s! Ready to forward.")
                     update_status("ready", {"current_model": model_name})
                     break
 
+                # Report the REAL reason before downgrading. A fast crash (child exited on its own) is
+                # almost never VRAM OOM (loading a 9B into VRAM takes far longer than a few seconds before
+                # OOM) — it is a config/path/port error the smaller tier SHARES, so mislabeling it "VRAM
+                # OOM" and cascading tiers just repeats the same crash. Surface the exit code + the
+                # llama-server log tail so the true cause is visible.
+                elapsed = int(time.time() - start)
+                if crashed:
+                    ts_print(
+                        f"❌ [Smart Gateway] [{model_name}] llama-server EXITED after {elapsed}s "
+                        f"(exit code {exit_code}) — a crash, not a load timeout. Real cause below:\n"
+                        f"──────── llama-server log tail ────────\n{self._llama_log_tail()}\n"
+                        f"───────────────────────────────────────"
+                    )
+                else:
+                    ts_print(
+                        f"⚠️ [Smart Gateway] [{model_name}] did not become healthy within "
+                        f"{self.LOAD_TIMEOUT_SECONDS}s (process still alive — likely slow load / VRAM pressure)."
+                    )
+
                 self.unload()
-                smaller = self._downgrade_tier(model_name)
+                # A fast crash (< 20s) is shared by every tier of the same model file → do NOT blindly
+                # cascade; only downgrade on a genuine slow-load / OOM timeout (process was alive at the
+                # deadline). This stops the request-driven 65k→32k→fail→404 thrash on a config/path error.
+                fast_crash = crashed and elapsed < 20
+                smaller = None if fast_crash else self._downgrade_tier(model_name)
                 if smaller and smaller in self.configs:
-                    ts_print(f"⚠️ [Smart Gateway] [{model_name}] failed to load within {self.LOAD_TIMEOUT_SECONDS}s (likely VRAM OOM). Auto-downgrading → [{smaller}].")
+                    ts_print(f"⚠️ [Smart Gateway] Auto-downgrading [{model_name}] → [{smaller}] (smaller context).")
                     model_name = smaller
                     continue
 
-                ts_print(f"❌ [Smart Gateway] [{model_name}] failed to load and no smaller tier available.")
+                reason = (f"llama-server crashed (exit {exit_code}) — check the model path/port/VRAM in the "
+                          f"log tail above" if fast_crash else "no smaller tier available")
+                ts_print(f"❌ [Smart Gateway] [{model_name}] could not be loaded: {reason}.")
                 self.current_model = None
-                update_status("error", {"error": f"Failed to load {model_name}"})
+                update_status("error", {"error": f"Failed to load {model_name}: {reason}"})
                 break
 
     def unload(self):
         if self.current_process or self._llama_log_handle:
             ts_print("💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...")
-            subprocess.run(
-                ["powershell", "-Command", "Stop-Process -Name 'llama-server' -Force -ErrorAction SilentlyContinue"],
-                check=False,
-            )
+            self._kill_orphan_llama_servers()
             if self.current_process:
                 try:
                     self.current_process.terminate()
