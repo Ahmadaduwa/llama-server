@@ -387,3 +387,599 @@ Disconnected test log 2
 [2026-08-26 19:00:35] 📤 [100.124.101.126] Completed v1/chat/completions in 392.62s
 [2026-08-26 19:00:36] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
 [2026-08-26 19:00:36] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:03:47] 📤 [100.124.101.126] Completed v1/chat/completions in 191.03s
+[2026-08-26 19:03:47] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:03:47] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:12:59] 📤 [100.124.101.126] Completed v1/chat/completions in 551.66s
+[2026-08-26 19:12:59] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:12:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:19:08] 📤 [100.124.101.126] Completed v1/chat/completions in 368.82s
+[2026-08-26 19:19:09] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:19:09] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:22:37] 📤 [100.124.101.126] Completed v1/chat/completions in 207.77s
+[2026-08-26 19:22:37] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:22:38] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:32:38] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:33:49] 📤 [100.124.101.126] Completed v1/chat/completions in 671.13s
+[2026-08-26 19:40:38] 📤 [100.124.101.126] Completed v1/chat/completions in 480.03s
+[2026-08-26 19:40:39] INFO: 100.124.101.126:43148 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:41:13] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:41:26] 📤 [100.124.101.126] Completed v1/chat/completions in 12.98s
+[2026-08-26 19:41:26] INFO: 100.124.101.126:45058 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:41:27] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:41:43] 📤 [100.124.101.126] Completed v1/chat/completions in 16.57s
+[2026-08-26 19:41:44] INFO: 100.124.101.126:45058 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:41:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:51:46] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:54:46] 📤 [100.124.101.126] Completed v1/chat/completions in 781.14s
+[2026-08-26 20:01:23] 📤 [100.124.101.126] Completed v1/chat/completions in 576.99s
+[2026-08-26 20:01:23] INFO: 100.124.101.126:59092 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:01:24] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:08:05] 📤 [100.124.101.126] Completed v1/chat/completions in 400.95s
+[2026-08-26 20:08:05] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:08:06] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:08:38] 📤 [100.124.101.126] Completed v1/chat/completions in 31.90s
+[2026-08-26 20:08:38] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:08:38] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:14:30] 📤 [100.124.101.126] Completed v1/chat/completions in 351.26s
+[2026-08-26 20:14:30] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:14:31] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:18:49] 📤 [100.124.101.126] Completed v1/chat/completions in 257.95s
+[2026-08-26 20:18:49] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:18:50] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:19:06] 📤 [100.124.101.126] Completed v1/chat/completions in 15.95s
+[2026-08-26 20:19:06] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:19:06] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:24:15] 📤 [100.124.101.126] Completed v1/chat/completions in 308.37s
+[2026-08-26 20:24:15] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:24:16] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:28:55] 📤 [100.124.101.126] Completed v1/chat/completions in 279.15s
+[2026-08-26 20:28:56] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:28:56] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:35:09] 📤 [100.124.101.126] Completed v1/chat/completions in 373.35s
+[2026-08-26 20:35:10] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:35:10] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:42:40] 📤 [100.124.101.126] Completed v1/chat/completions in 450.55s
+[2026-08-26 20:42:40] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:42:41] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:42:57] 📤 [100.124.101.126] Completed v1/chat/completions in 16.86s
+[2026-08-26 20:42:57] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:42:58] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:48:47] 📤 [100.124.101.126] Completed v1/chat/completions in 349.68s
+[2026-08-26 20:48:48] INFO: 100.124.101.126:44276 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 20:48:49] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:58:49] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 20:59:28] 📤 [100.124.101.126] Completed v1/chat/completions in 639.68s
+[2026-08-26 21:04:21] 📤 [100.124.101.126] Completed v1/chat/completions in 332.03s
+[2026-08-26 21:04:21] INFO: 100.124.101.126:39184 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:04:22] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:04:35] 📤 [100.124.101.126] Completed v1/chat/completions in 13.70s
+[2026-08-26 21:04:36] INFO: 100.124.101.126:42648 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:04:37] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:14:29] 📤 [100.124.101.126] Completed v1/chat/completions in 592.43s
+[2026-08-26 21:14:29] INFO: 100.124.101.126:42648 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:14:30] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:19:25] 📤 [100.124.101.126] Completed v1/chat/completions in 295.16s
+[2026-08-26 21:19:25] INFO: 100.124.101.126:42648 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:19:26] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:27:04] 📤 [100.124.101.126] Completed v1/chat/completions in 458.83s
+[2026-08-26 21:27:05] INFO: 100.124.101.126:42648 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:27:06] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:27:26] 📤 [100.124.101.126] Completed v1/chat/completions in 20.52s
+[2026-08-26 21:27:26] INFO: 100.124.101.126:42648 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:27:27] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:35:55] 📤 [100.124.101.126] Completed v1/chat/completions in 508.66s
+[2026-08-26 21:39:58] INFO: 100.124.101.126:55960 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 21:40:00] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:41:37] 📤 [100.124.101.126] Completed v1/chat/completions in 96.86s
+[2026-08-26 21:41:37] INFO: 100.124.101.126:55970 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:41:49] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:43:36] 📤 [100.124.101.126] Completed v1/chat/completions in 107.28s
+[2026-08-26 21:43:36] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:43:37] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:46:37] 📤 [100.124.101.126] Completed v1/chat/completions in 180.58s
+[2026-08-26 21:46:37] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:46:38] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:49:14] 📤 [100.124.101.126] Completed v1/chat/completions in 156.04s
+[2026-08-26 21:49:14] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:49:14] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:50:27] 📤 [100.124.101.126] Completed v1/chat/completions in 73.15s
+[2026-08-26 21:50:27] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:50:28] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 21:57:54] 📤 [100.124.101.126] Completed v1/chat/completions in 446.51s
+[2026-08-26 21:57:54] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 21:57:54] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:01:00] 📤 [100.124.101.126] Completed v1/chat/completions in 185.86s
+[2026-08-26 22:01:00] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:01:00] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:02:11] 📤 [100.124.101.126] Completed v1/chat/completions in 70.50s
+[2026-08-26 22:02:11] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:02:11] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:04:22] 📤 [100.124.101.126] Completed v1/chat/completions in 130.90s
+[2026-08-26 22:04:22] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:04:23] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:06:45] 📤 [100.124.101.126] Completed v1/chat/completions in 142.15s
+[2026-08-26 22:06:45] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:06:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:07:30] 📤 [100.124.101.126] Completed v1/chat/completions in 44.79s
+[2026-08-26 22:07:30] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:07:30] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:12:10] 📤 [100.124.101.126] Completed v1/chat/completions in 279.17s
+[2026-08-26 22:12:10] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:12:10] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:14:58] 📤 [100.124.101.126] Completed v1/chat/completions in 168.66s
+[2026-08-26 22:14:59] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:14:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:16:11] 📤 [100.124.101.126] Completed v1/chat/completions in 72.12s
+[2026-08-26 22:16:12] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:16:12] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:25:50] 📤 [100.124.101.126] Completed v1/chat/completions in 578.65s
+[2026-08-26 22:25:51] INFO: 100.124.101.126:44486 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:26:27] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:28:25] 📤 [100.124.101.126] Completed v1/chat/completions in 118.00s
+[2026-08-26 22:28:25] INFO: 100.124.101.126:35142 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:28:25] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:29:05] 📤 [100.124.101.126] Completed v1/chat/completions in 40.42s
+[2026-08-26 22:29:06] INFO: 100.124.101.126:35142 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:29:19] INFO: 100.124.101.126:59234 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 22:29:20] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:30:48] 📤 [100.124.101.126] Completed v1/chat/completions in 88.28s
+[2026-08-26 22:30:48] INFO: 100.124.101.126:59250 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:31:00] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:32:21] 📤 [100.124.101.126] Completed v1/chat/completions in 81.04s
+[2026-08-26 22:32:22] INFO: 100.124.101.126:59242 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:32:22] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:34:13] 📤 [100.124.101.126] Completed v1/chat/completions in 111.47s
+[2026-08-26 22:34:13] INFO: 100.124.101.126:59242 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:34:14] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:44:15] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:47:35] 📤 [100.124.101.126] Completed v1/chat/completions in 801.58s
+[2026-08-26 22:53:38] 📤 [100.124.101.126] Completed v1/chat/completions in 563.68s
+[2026-08-26 22:53:39] INFO: 100.124.101.126:35028 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:53:39] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:55:20] 📤 [100.124.101.126] Completed v1/chat/completions in 101.73s
+[2026-08-26 22:55:21] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:55:21] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:56:22] 📤 [100.124.101.126] Completed v1/chat/completions in 61.60s
+[2026-08-26 22:56:23] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:56:23] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 22:59:35] 📤 [100.124.101.126] Completed v1/chat/completions in 191.94s
+[2026-08-26 22:59:35] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 22:59:35] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:08:45] 📤 [100.124.101.126] Completed v1/chat/completions in 550.41s
+[2026-08-26 23:08:46] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:08:46] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:09:10] 📤 [100.124.101.126] Completed v1/chat/completions in 24.34s
+[2026-08-26 23:09:10] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:09:10] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:12:24] 📤 [100.124.101.126] Completed v1/chat/completions in 194.10s
+[2026-08-26 23:12:25] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:12:25] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:13:03] 📤 [100.124.101.126] Completed v1/chat/completions in 38.44s
+[2026-08-26 23:13:04] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:13:04] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:22:53] 📤 [100.124.101.126] Completed v1/chat/completions in 589.23s
+[2026-08-26 23:22:53] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:22:53] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:23:12] 📤 [100.124.101.126] Completed v1/chat/completions in 19.04s
+[2026-08-26 23:23:12] INFO: 100.124.101.126:53742 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:23:13] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:33:13] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:35:02] 📤 [100.124.101.126] Completed v1/chat/completions in 709.66s
+[2026-08-26 23:38:54] 📤 [100.124.101.126] Completed v1/chat/completions in 341.21s
+[2026-08-26 23:38:54] INFO: 100.124.101.126:58110 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:38:55] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:43:00] 📤 [100.124.101.126] Completed v1/chat/completions in 245.61s
+[2026-08-26 23:43:00] INFO: 100.124.101.126:58110 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:43:37] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:45:34] 📤 [100.124.101.126] Completed v1/chat/completions in 116.99s
+[2026-08-26 23:45:34] INFO: 100.124.101.126:59312 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:45:34] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 23:53:35] 📤 [100.124.101.126] Completed v1/chat/completions in 481.07s
+[2026-08-26 23:53:35] INFO: 100.124.101.126:59312 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 23:53:36] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-27 00:03:36] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-27 00:07:26] INFO: 100.124.101.126:39342 - "GET /v1/models HTTP/1.1" 200
+[2026-08-27 00:07:30] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:07:30] 💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...
+[2026-08-27 00:07:38] 
+🚀 [Smart Gateway] Loading [Ornith-1.5-9B-i1-65k] into VRAM...
+[2026-08-27 00:07:39] ❌ Connection to llama-server failed: 
+[2026-08-27 00:07:40] ❌ Connection to llama-server failed: 
+[2026-08-27 00:08:02] ✅ [Smart Gateway] Successfully loaded [Ornith-1.5-9B-i1-65k] in 20s! Ready to forward.
+[2026-08-27 00:08:11] 📤 [100.124.101.126] Completed v1/chat/completions in 41.62s
+[2026-08-27 00:08:12] INFO: 100.124.101.126:39344 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:08:24] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:08:28] 📤 [100.124.101.126] Completed v1/chat/completions in 4.88s
+[2026-08-27 00:08:29] INFO: 100.124.101.126:51890 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:08:29] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:08:34] 📤 [100.124.101.126] Completed v1/chat/completions in 5.22s
+[2026-08-27 00:08:34] INFO: 100.124.101.126:51890 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:08:35] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:10:17] 📤 [100.124.101.126] Completed v1/chat/completions in 102.06s
+[2026-08-27 00:10:17] INFO: 100.124.101.126:51890 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:10:18] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:20:18] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:22:02] 📤 [100.124.101.126] Completed v1/chat/completions in 704.98s
+[2026-08-27 00:32:38] INFO: 100.124.101.126:57624 - "GET /v1/models HTTP/1.1" 200
+[2026-08-27 00:32:41] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.5-9B-65k-uncen] (stream=False)
+[2026-08-27 00:32:41] 💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...
+[2026-08-27 00:32:44] 
+🚀 [Smart Gateway] Loading [Qwen3.5-9B-65k-uncen] into VRAM...
+[2026-08-27 00:32:47] ❌ Connection to llama-server failed: 
+[2026-08-27 00:32:56] ✅ [Smart Gateway] Successfully loaded [Qwen3.5-9B-65k-uncen] in 8s! Ready to forward.
+[2026-08-27 00:34:03] 📤 [100.124.101.126] Completed v1/chat/completions in 81.71s
+[2026-08-27 00:34:04] INFO: 100.124.101.126:57640 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:34:17] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.5-9B-65k-uncen] (stream=False)
+[2026-08-27 00:34:21] 📤 [100.124.101.126] Completed v1/chat/completions in 4.32s
+[2026-08-27 00:34:22] INFO: 100.124.101.126:42350 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:34:25] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.5-9B-65k-uncen] (stream=False)
+[2026-08-27 00:34:32] 📤 [100.124.101.126] Completed v1/chat/completions in 7.27s
+[2026-08-27 00:34:33] INFO: 100.124.101.126:42350 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:34:35] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.5-9B-65k-uncen] (stream=False)
+[2026-08-27 00:34:58] 📤 [100.124.101.126] Completed v1/chat/completions in 23.98s
+[2026-08-27 00:34:58] INFO: 100.124.101.126:42350 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:34:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.5-9B-65k-uncen] (stream=False)
+[2026-08-27 00:36:17] 📤 [100.124.101.126] Completed v1/chat/completions in 78.37s
+[2026-08-27 00:36:39] INFO: 100.124.101.126:41192 - "GET /v1/models HTTP/1.1" 200
+[2026-08-27 00:36:41] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:36:41] 💤 [Smart Gateway] Clearing GPU VRAM (Force Kill llama-server)...
+[2026-08-27 00:36:44] 
+🚀 [Smart Gateway] Loading [Ornith-1.5-9B-i1-65k] into VRAM...
+[2026-08-27 00:37:00] ✅ [Smart Gateway] Successfully loaded [Ornith-1.5-9B-i1-65k] in 11s! Ready to forward.
+[2026-08-27 00:37:13] 📤 [100.124.101.126] Completed v1/chat/completions in 32.03s
+[2026-08-27 00:37:13] INFO: 100.124.101.126:41196 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:37:27] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:37:35] 📤 [100.124.101.126] Completed v1/chat/completions in 8.12s
+[2026-08-27 00:37:35] INFO: 100.124.101.126:40600 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:37:39] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:37:51] 📤 [100.124.101.126] Completed v1/chat/completions in 12.83s
+[2026-08-27 00:37:52] INFO: 100.124.101.126:40600 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:37:53] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:39:07] 📤 [100.124.101.126] Completed v1/chat/completions in 74.79s
+[2026-08-27 00:39:08] INFO: 100.124.101.126:40600 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:39:09] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:44:16] 📤 [100.124.101.126] Completed v1/chat/completions in 307.52s
+[2026-08-27 00:44:18] INFO: 100.124.101.126:40600 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:44:18] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:46:56] 📤 [100.124.101.126] Completed v1/chat/completions in 158.35s
+[2026-08-27 00:48:00] INFO: 100.124.101.126:35868 - "GET /v1/models HTTP/1.1" 200
+[2026-08-27 00:48:05] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:48:13] 📤 [100.124.101.126] Completed v1/chat/completions in 9.39s
+[2026-08-27 00:48:14] INFO: 100.124.101.126:38996 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:48:30] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:48:37] 📤 [100.124.101.126] Completed v1/chat/completions in 7.87s
+[2026-08-27 00:48:38] INFO: 100.124.101.126:59054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:48:41] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:48:53] 📤 [100.124.101.126] Completed v1/chat/completions in 12.86s
+[2026-08-27 00:48:54] INFO: 100.124.101.126:59054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:48:55] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:50:22] 📤 [100.124.101.126] Completed v1/chat/completions in 87.87s
+[2026-08-27 00:50:24] INFO: 100.124.101.126:59054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:50:24] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:50:48] 📤 [100.124.101.126] Completed v1/chat/completions in 24.16s
+[2026-08-27 00:50:49] INFO: 100.124.101.126:59054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:50:52] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:50:56] 📤 [100.124.101.126] Completed v1/chat/completions in 6.39s
+[2026-08-27 00:50:57] INFO: 100.124.101.126:59054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:50:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 00:56:48] 📤 [100.124.101.126] Completed v1/chat/completions in 349.77s
+[2026-08-27 00:56:50] INFO: 100.124.101.126:59054 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 00:56:51] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 01:06:51] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 01:12:11] 📤 [100.124.101.126] Completed v1/chat/completions in 920.10s
+[2026-08-27 01:16:53] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 01:26:54] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-9B-i1-65k] (stream=False)
+[2026-08-27 01:28:22] INFO: Shutting down
+[2026-08-27 01:28:22] INFO: Shutting down
+[2026-08-27 01:28:22] INFO: Waiting for background tasks to complete. (CTRL+C to force quit)
+[2026-08-27 01:28:22] INFO: Waiting for background tasks to complete. (CTRL+C to force quit)
+[2026-08-27 01:29:54] INFO: Finished server process [60768]
+[2026-08-27 01:29:54] INFO: Finished server process [60768]
+[2026-08-27 01:29:56] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-08-27 01:29:56] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-08-27 01:29:57] ⚠️ [100.124.101.126] Request cancelled by client
+[2026-08-27 01:29:58] ⚠️ [100.124.101.126] Request cancelled by client
+[2026-08-27 01:29:59] ⚠️ [100.124.101.126] Request cancelled by client
+[2026-08-27 01:29:59] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 113, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+[2026-08-27 01:29:59] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 113, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+[2026-08-27 01:30:00] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 113, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+[2026-08-27 01:30:00] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 113, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+[2026-08-27 01:30:01] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 113, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+[2026-08-27 01:30:01] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 118, in receive
+    return self.receive_nowait()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 113, in receive_nowait
+    raise WouldBlock
+anyio.WouldBlock
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError

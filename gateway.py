@@ -280,6 +280,7 @@ class SmartLLMManager:
         model_9b_uncen = os.path.join(base_dir, "model\\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf")
         model_ornith = os.path.join(base_dir, "model\\Ornith-1.5-9B-uncensored\\Ornith-1.5-9B-uncensored.Q4_K_M.gguf")
         model_ornith_i1 = os.path.join(base_dir, "model\\Ornith-1.5-9B-uncensored-i1-GGUF\\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf")
+        model_ornith_35b = os.path.join(base_dir, "model\\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf")
         model_27b_cyber = os.path.join(base_dir, "model\\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf")
 
         model_4b = os.path.join(base_dir, "model\\Qwen3.5-4B-GGUF\\Qwen3.5-4B-Q4_K_M.gguf")
@@ -303,6 +304,11 @@ class SmartLLMManager:
         # older generation without MTP, so the same flag would fail to load — speeding their DECODE would
         # need a separate small draft model (`-md <draft.gguf> --draft-max N`); left off until one is added.
         self.configs = {
+            # Ornith 1.5 35B A3B Abliterated (IQ3_M) - 65K Context Budget, KV Cache q4_0/q4_0, 18 Layers GPU Offload, 8 CPU Threads, 36 CPU MoE
+            "Ornith-1.5-35B-65k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 18 -c 65536 -b 1024 -ub 512 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 36 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-35B-32k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 18 -c 32768 -b 1024 -ub 512 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 36 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-35B-16k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 18 -c 16384 -b 1024 -ub 512 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 36 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+
             # Qwen 3.8 27B Uncensored Cyber (IQ4_XS) - 65K Context Budget, KV Cache 4-bit, 26 Layers GPU Offload, 8-10 CPU Threads, MTP Speculative Decoding (Max Draft 2)
             "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256 --spec-type draft-mtp --spec-draft-n-max 2',
             "Qwen3.8-27B-32k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256 --spec-type draft-mtp --spec-draft-n-max 2',
@@ -395,6 +401,17 @@ class SmartLLMManager:
             
             # Map friendly aliases
             aliases = {
+                "ornith-1.5-35b": "Ornith-1.5-35B-65k",
+                "ornith-1.5-35b-65k": "Ornith-1.5-35B-65k",
+                "ornith-1.5-35b-32k": "Ornith-1.5-35B-32k",
+                "ornith-1.5-35b-16k": "Ornith-1.5-35B-16k",
+                "ornith-35b": "Ornith-1.5-35B-65k",
+                "ornith-1.5-35b-a3b": "Ornith-1.5-35B-65k",
+                "ornith-35b-a3b": "Ornith-1.5-35B-65k",
+                "ornith-1.5-35b-a3b-abliterated": "Ornith-1.5-35B-65k",
+                "ornith-1.5-35b-a3b-abliterated.i1-iq3_m": "Ornith-1.5-35B-65k",
+                "ornith-35b-iq3_m": "Ornith-1.5-35B-65k",
+                "35b": "Ornith-1.5-35B-65k",
                 "qwen3.8-27b": "Qwen3.8-27B-65k-cyber",
                 "qwen3.8-27b-65k": "Qwen3.8-27B-65k-cyber",
                 "qwen3.8-27b-70k": "Qwen3.8-27B-65k-cyber",
@@ -415,8 +432,10 @@ class SmartLLMManager:
                 if clean_name.lower() in case_map:
                     model_name = case_map[clean_name.lower()]
                 else:
-                    ts_print(f"⚠️ Model '{model_name}' not in known tier list -> defaulting to 'Qwen3.8-27B-65k-cyber' if requested 27B or 'Ornith-1.5-9B-65k'")
-                    if "27b" in clean_name.lower():
+                    ts_print(f"⚠️ Model '{model_name}' not in known tier list -> defaulting to 'Ornith-1.5-35B-65k' if requested 35B, 'Qwen3.8-27B-65k-cyber' if 27B or 'Ornith-1.5-9B-65k'")
+                    if "35b" in clean_name.lower():
+                        model_name = "Ornith-1.5-35B-65k"
+                    elif "27b" in clean_name.lower():
                         model_name = "Qwen3.8-27B-65k-cyber"
                     else:
                         model_name = "Ornith-1.5-9B-65k"
@@ -639,7 +658,10 @@ async def shutdown_event():
 
 
 def _model_meta(name: str):
-    if "27B" in name:
+    if "35B" in name:
+        param = "35B"
+        size = 17500000000
+    elif "27B" in name:
         param = "27B"
         size = 15309040064
     elif "4B" in name:
@@ -649,7 +671,9 @@ def _model_meta(name: str):
         param = "9B"
         size = 5629109408
 
-    if "IQ4_XS" in name or "cyber" in name.lower():
+    if "IQ3_M" in name or "iq3" in name.lower() or "35B" in name:
+        quant = "IQ3_M"
+    elif "IQ4_XS" in name or "cyber" in name.lower():
         quant = "IQ4_XS"
     elif "i1" in name.lower() or "Q5_K_M" in name:
         quant = "Q5_K_M"
