@@ -370,3 +370,20 @@ Disconnected test log 2
 [2026-08-26 18:43:30] INFO: Application startup complete.
 [2026-08-26 18:43:30] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
 [2026-08-26 18:43:30] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-08-26 18:48:47] INFO: 100.124.101.126:37202 - "GET /v1/models HTTP/1.1" 200
+[2026-08-26 18:48:49] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 18:48:49] 
+🚀 [Smart Gateway] Loading [Qwen3.8-27B-65k-cyber] into VRAM...
+[2026-08-26 18:49:27] ✅ [Smart Gateway] Successfully loaded [Qwen3.8-27B-65k-cyber] in 34s! Ready to forward.
+[2026-08-26 18:50:57] 📤 [100.124.101.126] Completed v1/chat/completions in 127.90s
+[2026-08-26 18:50:57] INFO: 100.124.101.126:37216 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 18:51:09] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 18:52:13] 📤 [100.124.101.126] Completed v1/chat/completions in 63.86s
+[2026-08-26 18:52:13] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 18:52:13] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 18:54:02] 📤 [100.124.101.126] Completed v1/chat/completions in 108.78s
+[2026-08-26 18:54:02] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 18:54:03] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
+[2026-08-26 19:00:35] 📤 [100.124.101.126] Completed v1/chat/completions in 392.62s
+[2026-08-26 19:00:36] INFO: 100.124.101.126:51462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-26 19:00:36] 📥 [100.124.101.126] Incoming v1/chat/completions for [Qwen3.8-27B-65k-cyber] (stream=False)
