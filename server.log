@@ -983,3 +983,224 @@ Traceback (most recent call last):
   File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
     await fut
 asyncio.exceptions.CancelledError
+[2026-08-27 01:48:22] 🔥 Starting Pentest Smart Gateway (async, non-blocking) on port 11434 (mocking Ollama)...
+[2026-08-27 01:48:22] 📡 Shared Drive Log: Z:\server.log
+[2026-08-27 01:48:22] 📁 Local Fallback Log: server.log
+[2026-08-27 01:48:22] 📊 Status JSON: Z:\gateway_status.json
+[2026-08-27 01:48:22] INFO: Application startup complete.
+[2026-08-27 01:48:22] INFO: Application startup complete.
+[2026-08-27 01:48:22] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-08-27 01:48:22] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-08-27 02:02:41] INFO: 100.124.101.126:58692 - "GET /v1/models HTTP/1.1" 200
+[2026-08-27 02:02:57] INFO: 100.124.101.126:48186 - "GET /v1/models HTTP/1.1" 200
+[2026-08-27 02:02:59] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-65k] (stream=False)
+[2026-08-27 02:02:59] 
+🚀 [Smart Gateway] Loading [Ornith-1.5-35B-65k] into VRAM...
+[2026-08-27 02:03:32] ✅ [Smart Gateway] Successfully loaded [Ornith-1.5-35B-65k] in 28s! Ready to forward.
+[2026-08-27 02:04:33] 📤 [100.124.101.126] Completed v1/chat/completions in 93.77s
+[2026-08-27 02:04:33] INFO: 100.124.101.126:48196 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 02:04:40] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-65k] (stream=False)
+[2026-08-27 02:05:25] 📤 [100.124.101.126] Completed v1/chat/completions in 45.11s
+[2026-08-27 02:05:26] INFO: 100.124.101.126:41662 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 02:05:26] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-65k] (stream=False)
+[2026-08-27 02:06:42] 📤 [100.124.101.126] Completed v1/chat/completions in 76.52s
+[2026-08-27 02:06:42] INFO: 100.124.101.126:41662 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 02:06:43] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-65k] (stream=False)
+[2026-08-27 02:14:08] 📤 [100.124.101.126] Completed v1/chat/completions in 445.46s
+[2026-08-27 02:14:08] INFO: 100.124.101.126:41662 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-08-27 02:14:08] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-65k] (stream=False)
+[2026-08-27 02:18:52] INFO: Shutting down
+[2026-08-27 02:18:52] INFO: Shutting down
+[2026-08-27 02:18:52] INFO: Finished server process [17864]
+[2026-08-27 02:18:52] INFO: Finished server process [17864]
+[2026-08-27 02:18:53] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-08-27 02:18:53] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-08-27 02:18:53] ⚠️ [100.124.101.126] Request cancelled by client
+[2026-08-27 02:18:53] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError
+[2026-08-27 02:18:53] ERROR: Exception in ASGI application
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 416, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 63, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\fastapi\applications.py", line 1163, in __call__
+    await super().__call__(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\applications.py", line 90, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 193, in __call__
+    response = await self.dispatch_func(request, call_next)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects\llama-server\gateway.py", line 262, in verify_api_key
+    return await call_next(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\middleware\base.py", line 151, in call_next
+    message = await recv_stream.receive()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\anyio\streams\memory.py", line 126, in receive
+    await receive_event.wait()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\locks.py", line 213, in wait
+    await fut
+asyncio.exceptions.CancelledError

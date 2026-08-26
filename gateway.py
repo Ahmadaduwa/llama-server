@@ -304,10 +304,10 @@ class SmartLLMManager:
         # older generation without MTP, so the same flag would fail to load — speeding their DECODE would
         # need a separate small draft model (`-md <draft.gguf> --draft-max N`); left off until one is added.
         self.configs = {
-            # Ornith 1.5 35B A3B Abliterated (IQ3_M) - 65K Context Budget, KV Cache q4_0/q4_0, 18 Layers GPU Offload, 8 CPU Threads, 36 CPU MoE
-            "Ornith-1.5-35B-65k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 18 -c 65536 -b 1024 -ub 512 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 36 --parallel 1 --cont-batching --jinja --cache-reuse 256',
-            "Ornith-1.5-35B-32k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 18 -c 32768 -b 1024 -ub 512 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 36 --parallel 1 --cont-batching --jinja --cache-reuse 256',
-            "Ornith-1.5-35B-16k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 18 -c 16384 -b 1024 -ub 512 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 36 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            # Ornith 1.5 35B A3B Abliterated (IQ3_M) - 65K Context Budget, KV Cache q4_0/q4_0, 28 Layers GPU Offload, 8 CPU Threads, 27 CPU MoE
+            "Ornith-1.5-35B-65k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-35B-32k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256',
+            "Ornith-1.5-35B-16k": f'& "{exe}" -m "{model_ornith_35b}" --port 8080 -ngl 28 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256',
 
             # Qwen 3.8 27B Uncensored Cyber (IQ4_XS) - 65K Context Budget, KV Cache 4-bit, 26 Layers GPU Offload, 8-10 CPU Threads, MTP Speculative Decoding (Max Draft 2)
             "Qwen3.8-27B-65k-cyber": f'& "{exe}" -m "{model_27b_cyber}" --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256 --spec-type draft-mtp --spec-draft-n-max 2',
