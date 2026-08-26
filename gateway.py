@@ -288,11 +288,16 @@ class SmartLLMManager:
         # 🟢 Tier command repository (llama-server runs in the background on port 8080).
         # Prefix with & so PowerShell understands commands with quotes.
         #
-        # --cache-reuse 256 (all tiers): LOSSLESS prompt-cache reuse. At ~4 tok/s on the partial-offload
-        # 27B, prefill of the prompt dominates a step. Consecutive requests to the single slot share a
-        # large identical PREFIX — the role system prompt, and especially the EXECUTOR's up-to-4-retry loop
-        # which re-sends the SAME prompt — so reusing the cached KV for the common chunks (min 256 tokens)
-        # skips recomputing them. The generated output is byte-identical; only wasted prefill is removed.
+        # --cache-reuse 256 (all tiers): LOSSLESS prompt-cache reuse — reuse the cached KV for the large
+        # identical PREFIX shared by consecutive requests to the single slot (the role system prompt, and
+        # especially the EXECUTOR's up-to-4-retry loop that re-sends the SAME prompt), skipping its prefill.
+        # NOTE (observed 2026-08-26): llama-server b10054 DISABLES it on load — "cache_reuse is not
+        # supported by this context, it will be disabled" — because the KV cache is not unified
+        # (kv_unified=false, a consequence of the quantized KV cache `-ctk/-ctv q*_0` + `--parallel 1`).
+        # It is a harmless no-op as-is. To actually enable it on a FUTURE gateway restart, try adding
+        # `--kv-unified`; if that costs too much VRAM on the 8GB 27B or is rejected, this stays a no-op and
+        # the real per-step speedup comes from the CLIENT levers instead (shorter prompts via
+        # parser_token_ceiling + reasoning-off on the mechanical roles), which are already in effect.
         # --spec-type draft-mtp (27B only): the Qwen3.8 generation ships MTP (multi-token-prediction) heads,
         # so self-speculative decode is lossless and free here. The 9B tiers (Qwen3.5 / Ornith-1.5) are an
         # older generation without MTP, so the same flag would fail to load — speeding their DECODE would
