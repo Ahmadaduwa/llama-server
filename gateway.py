@@ -766,12 +766,43 @@ async def ollama_show(request: Request):
     }
 
 
+_vram_cache: dict = {}
+_vram_cache_time: float = 0.0
+
+
+def get_vram_info() -> dict:
+    """Query NVIDIA VRAM usage via nvidia-smi with 1-second caching."""
+    global _vram_cache, _vram_cache_time
+    now = time.time()
+    if _vram_cache and (now - _vram_cache_time) < 1.0:
+        return _vram_cache
+    try:
+        cmd = ["nvidia-smi", "--query-gpu=memory.used,memory.total,utilization.gpu", "--format=csv,nounits,noheader"]
+        out = subprocess.check_output(cmd, encoding="utf-8", timeout=1.0, stderr=subprocess.DEVNULL)
+        line = out.strip().splitlines()[0]
+        parts = [x.strip() for x in line.split(",")]
+        used_mb, total_mb, util_pct = float(parts[0]), float(parts[1]), float(parts[2])
+        _vram_cache = {
+            "used_mb": round(used_mb, 1),
+            "total_mb": round(total_mb, 1),
+            "pct": round((used_mb / total_mb) * 100, 1),
+            "gpu_util_pct": round(util_pct, 1),
+        }
+        _vram_cache_time = now
+        return _vram_cache
+    except Exception:
+        return {}
+
+
 def _recover_content_from_reasoning(resp_json: dict) -> dict:
     choices = resp_json.get("choices") or []
+    reasoning_tokens = 0
     if choices and isinstance(choices[0], dict):
         msg = choices[0].get("message") or {}
         content = (msg.get("content") or "").strip()
         reasoning = (msg.get("reasoning_content") or "").strip()
+        if reasoning:
+            reasoning_tokens = max(1, int(len(reasoning) / 3.5))
         if not content and reasoning:
             m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", reasoning, re.DOTALL)
             if not m:
@@ -784,6 +815,17 @@ def _recover_content_from_reasoning(resp_json: dict) -> dict:
                     msg["content"] = reasoning
             else:
                 msg["content"] = reasoning
+
+    # Attach VRAM metrics and reasoning tokens into usage
+    usage = resp_json.setdefault("usage", {})
+    if isinstance(usage, dict):
+        vram = get_vram_info()
+        if vram:
+            usage["vram"] = vram
+        if reasoning_tokens > 0:
+            details = usage.setdefault("completion_tokens_details", {})
+            if isinstance(details, dict) and "reasoning_tokens" not in details:
+                details["reasoning_tokens"] = reasoning_tokens
     return resp_json
 
 
