@@ -351,12 +351,19 @@ class SmartLLMManager:
         # MODELS
         # ----------------------------------------------------
 
-        # 1. Qwen 3.6 35B A3B Uncensored (MoE, IQ4_XS)
+        # 1. Qwen 3.6 35B A3B Uncensored (MoE, IQ4_XS & IQ3_M)
         model_qwen_35b = os.path.join(
             self.base_dir,
             "model\\"
             "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\\"
             "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf",
+        )
+
+        model_qwen_35b_iq3 = os.path.join(
+            self.base_dir,
+            "model\\"
+            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\\"
+            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf",
         )
 
         mmproj_qwen_35b = os.path.join(
@@ -366,12 +373,19 @@ class SmartLLMManager:
             "mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf",
         )
 
-        # 2. Ornith 1.5 35B A3B Abliterated (MoE, IQ4_XS)
+        # 2. Ornith 1.5 35B A3B Abliterated (MoE, IQ4_XS & IQ3_M)
         model_ornith_35b = os.path.join(
             self.base_dir,
             "model\\"
             "Ornith-1.5-35B-A3B-abliterated-i1-GGUF\\"
             "Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf",
+        )
+
+        model_ornith_35b_iq3 = os.path.join(
+            self.base_dir,
+            "model\\"
+            "Ornith-1.5-35B-A3B-abliterated-i1-GGUF\\"
+            "Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf",
         )
 
         # 3. Ornith 1.5 9B Uncensored (Dense, Q5_K_M)
@@ -415,9 +429,10 @@ class SmartLLMManager:
             "-t 6 "
             "-tb 6 "
             "--n-cpu-moe 27 "
-            "--parallel 1 "
+            "--parallel 3 "
             "--cont-batching "
             "--jinja "
+            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Qwen3.6-35B-32k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b}" '
@@ -456,6 +471,63 @@ class SmartLLMManager:
             "--jinja "
             "--cache-reuse 256",
 
+            # === Qwen 3.6 35B A3B Uncensored (IQ3_M) ===
+            "Qwen3.6-35B-IQ3-65k": f'& "{self.exe}" '
+            f'-m "{model_qwen_35b_iq3}" '
+            f"--port {LLM_PORT} "
+            "-ngl 28 "
+            "-c 65536 "
+            "-b 2048 "
+            "-ub 1024 "
+            "--no-mmap "
+            "-fa on "
+            "-ctk q4_0 "
+            "-ctv q4_0 "
+            "-t 6 "
+            "-tb 6 "
+            "--n-cpu-moe 27 "
+            "--parallel 3 "
+            "--cont-batching "
+            "--jinja "
+            "--slot-prompt-similarity 0.5 "
+            "--cache-reuse 256",
+            "Qwen3.6-35B-IQ3-32k": f'& "{self.exe}" '
+            f'-m "{model_qwen_35b_iq3}" '
+            f"--port {LLM_PORT} "
+            "-ngl 28 "
+            "-c 32768 "
+            "-b 2048 "
+            "-ub 1024 "
+            "--no-mmap "
+            "-fa on "
+            "-ctk q4_0 "
+            "-ctv q4_0 "
+            "-t 6 "
+            "-tb 6 "
+            "--n-cpu-moe 27 "
+            "--parallel 1 "
+            "--cont-batching "
+            "--jinja "
+            "--cache-reuse 256",
+            "Qwen3.6-35B-IQ3-16k": f'& "{self.exe}" '
+            f'-m "{model_qwen_35b_iq3}" '
+            f"--port {LLM_PORT} "
+            "-ngl 28 "
+            "-c 16384 "
+            "-b 2048 "
+            "-ub 1024 "
+            "--no-mmap "
+            "-fa on "
+            "-ctk q4_0 "
+            "-ctv q4_0 "
+            "-t 6 "
+            "-tb 6 "
+            "--n-cpu-moe 27 "
+            "--parallel 1 "
+            "--cont-batching "
+            "--jinja "
+            "--cache-reuse 256",
+
             # === Ornith 1.5 35B A3B Abliterated (IQ4_XS) ===
             "Ornith-1.5-35B-65k": f'& "{self.exe}" '
             f'-m "{model_ornith_35b}" '
@@ -471,9 +543,10 @@ class SmartLLMManager:
             "-t 6 "
             "-tb 6 "
             "--n-cpu-moe 27 "
-            "--parallel 1 "
+            "--parallel 3 "
             "--cont-batching "
             "--jinja "
+            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Ornith-1.5-35B-32k": f'& "{self.exe}" '
             f'-m "{model_ornith_35b}" '
@@ -512,6 +585,63 @@ class SmartLLMManager:
             "--jinja "
             "--cache-reuse 256",
 
+            # === Ornith 1.5 35B A3B Abliterated (IQ3_M) ===
+            "Ornith-1.5-35B-IQ3-65k": f'& "{self.exe}" '
+            f'-m "{model_ornith_35b_iq3}" '
+            f"--port {LLM_PORT} "
+            "-ngl 28 "
+            "-c 65536 "
+            "-b 2048 "
+            "-ub 1024 "
+            "--no-mmap "
+            "-fa on "
+            "-ctk q4_0 "
+            "-ctv q4_0 "
+            "-t 6 "
+            "-tb 6 "
+            "--n-cpu-moe 27 "
+            "--parallel 3 "
+            "--cont-batching "
+            "--jinja "
+            "--slot-prompt-similarity 0.5 "
+            "--cache-reuse 256",
+            "Ornith-1.5-35B-IQ3-32k": f'& "{self.exe}" '
+            f'-m "{model_ornith_35b_iq3}" '
+            f"--port {LLM_PORT} "
+            "-ngl 28 "
+            "-c 32768 "
+            "-b 2048 "
+            "-ub 1024 "
+            "--no-mmap "
+            "-fa on "
+            "-ctk q4_0 "
+            "-ctv q4_0 "
+            "-t 6 "
+            "-tb 6 "
+            "--n-cpu-moe 27 "
+            "--parallel 1 "
+            "--cont-batching "
+            "--jinja "
+            "--cache-reuse 256",
+            "Ornith-1.5-35B-IQ3-16k": f'& "{self.exe}" '
+            f'-m "{model_ornith_35b_iq3}" '
+            f"--port {LLM_PORT} "
+            "-ngl 28 "
+            "-c 16384 "
+            "-b 2048 "
+            "-ub 1024 "
+            "--no-mmap "
+            "-fa on "
+            "-ctk q4_0 "
+            "-ctv q4_0 "
+            "-t 6 "
+            "-tb 6 "
+            "--n-cpu-moe 27 "
+            "--parallel 1 "
+            "--cont-batching "
+            "--jinja "
+            "--cache-reuse 256",
+
             # === Ornith 1.5 9B Uncensored i1 (Q5_K_M) ===
             "Ornith-1.5-9B-i1-65k": f'& "{self.exe}" '
             f'-m "{model_ornith_9b_i1}" '
@@ -526,9 +656,10 @@ class SmartLLMManager:
             "-ctv q8_0 "
             "-t 6 "
             "-tb 6 "
-            "--parallel 1 "
+            "--parallel 3 "
             "--cont-batching "
             "--jinja "
+            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Ornith-1.5-9B-i1-32k": f'& "{self.exe}" '
             f'-m "{model_ornith_9b_i1}" '
@@ -562,9 +693,10 @@ class SmartLLMManager:
             "-ctv q4_0 "
             "-t 6 "
             "-tb 6 "
-            "--parallel 1 "
+            "--parallel 3 "
             "--cont-batching "
             "--jinja "
+            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Qwen3.5-9B-132k-uncen": f'& "{self.exe}" '
             f'-m "{model_9b_uncen}" '
@@ -579,9 +711,10 @@ class SmartLLMManager:
             "-ctv q4_0 "
             "-t 6 "
             "-tb 6 "
-            "--parallel 1 "
+            "--parallel 3 "
             "--cont-batching "
             "--jinja "
+            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Qwen3.5-9B-65k-uncen": f'& "{self.exe}" '
             f'-m "{model_9b_uncen}" '
@@ -596,9 +729,10 @@ class SmartLLMManager:
             "-ctv q8_0 "
             "-t 6 "
             "-tb 6 "
-            "--parallel 1 "
+            "--parallel 3 "
             "--cont-batching "
             "--jinja "
+            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Qwen3.5-9B-32k-uncen": f'& "{self.exe}" '
             f'-m "{model_9b_uncen}" '
@@ -624,7 +758,7 @@ class SmartLLMManager:
         # ----------------------------------------------------
 
         self.aliases = {
-            # Qwen 3.6 35B
+            # Qwen 3.6 35B (IQ4)
             "qwen3.6-35b": "Qwen3.6-35B-65k",
             "qwen3.6-35b-65k": "Qwen3.6-35B-65k",
             "qwen3.6-35b-32k": "Qwen3.6-35B-32k",
@@ -634,7 +768,15 @@ class SmartLLMManager:
             "qwen3.6": "Qwen3.6-35B-65k",
             "35b": "Qwen3.6-35B-65k",
 
-            # Ornith 1.5 35B
+            # Qwen 3.6 35B (IQ3)
+            "qwen3.6-35b-iq3": "Qwen3.6-35B-IQ3-65k",
+            "qwen3.6-35b-iq3-65k": "Qwen3.6-35B-IQ3-65k",
+            "qwen3.6-35b-iq3-32k": "Qwen3.6-35B-IQ3-32k",
+            "qwen3.6-35b-iq3-16k": "Qwen3.6-35B-IQ3-16k",
+            "qwen-35b-iq3": "Qwen3.6-35B-IQ3-65k",
+            "35b-iq3": "Qwen3.6-35B-IQ3-65k",
+
+            # Ornith 1.5 35B (IQ4)
             "ornith-1.5-35b": "Ornith-1.5-35B-65k",
             "ornith-1.5-35b-65k": "Ornith-1.5-35B-65k",
             "ornith-1.5-35b-32k": "Ornith-1.5-35B-32k",
@@ -644,6 +786,15 @@ class SmartLLMManager:
             "ornith-1.5-35b-a3b": "Ornith-1.5-35B-65k",
             "ornith-35b-a3b": "Ornith-1.5-35B-65k",
             "ornith-1.5-35b-a3b-abliterated": "Ornith-1.5-35B-65k",
+
+            # Ornith 1.5 35B (IQ3)
+            "ornith-1.5-35b-iq3": "Ornith-1.5-35B-IQ3-65k",
+            "ornith-1.5-35b-iq3-65k": "Ornith-1.5-35B-IQ3-65k",
+            "ornith-1.5-35b-iq3-32k": "Ornith-1.5-35B-IQ3-32k",
+            "ornith-1.5-35b-iq3-16k": "Ornith-1.5-35B-IQ3-16k",
+            "ornith-35b-iq3": "Ornith-1.5-35B-IQ3-65k",
+            "ornith-1.5-35b-a3b-iq3": "Ornith-1.5-35B-IQ3-65k",
+            "ornith-35b-a3b-iq3": "Ornith-1.5-35B-IQ3-65k",
 
             # Ornith 1.5 9B
             "ornith-1.5-9b": "Ornith-1.5-9B-i1-65k",
@@ -1233,7 +1384,7 @@ def _model_meta(name):
 
     if "35B" in name:
         param = "35B"
-        size = 18728778656
+        size = 15440519296 if ("IQ3" in name or "iq3" in name.lower()) else 18728778656
 
     elif "27B" in name:
         param = "27B"
@@ -1247,7 +1398,10 @@ def _model_meta(name):
         param = "9B"
         size = 6467970496 if ("Q5" in name or "Ornith" in name) else 5627044224
 
-    if "35B" in name or "IQ4_XS" in name or "iq4" in name.lower():
+    if "IQ3" in name or "iq3" in name.lower():
+        quant = "IQ3_M"
+
+    elif "35B" in name or "IQ4_XS" in name or "iq4" in name.lower():
         quant = "IQ4_XS"
 
     elif "i1" in name.lower() or "Q5_K_M" in name or "q5" in name.lower():
