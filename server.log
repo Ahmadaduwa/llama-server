@@ -67855,3 +67855,383 @@ asyncio.exceptions.CancelledError
 [2026-09-04 01:02:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
 [2026-09-04 01:02:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
 [2026-09-04 01:02:19] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:18:57] INFO: Shutting down
+[2026-09-04 01:18:57] INFO: Shutting down
+[2026-09-04 01:18:57] INFO: Waiting for application shutdown.
+[2026-09-04 01:18:57] INFO: Waiting for application shutdown.
+[2026-09-04 01:18:58] 🛑 Gateway shutting down...
+[2026-09-04 01:18:58] 🛑 Stopping embedding llama-server
+[2026-09-04 01:19:02] INFO: Application shutdown complete.
+[2026-09-04 01:19:02] INFO: Application shutdown complete.
+[2026-09-04 01:19:02] INFO: Finished server process [17368]
+[2026-09-04 01:19:02] INFO: Finished server process [17368]
+[2026-09-04 01:19:05] 🔥 Starting Smart LLM Gateway
+[2026-09-04 01:19:05] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-04 01:19:05] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-04 01:19:05] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-04 01:19:05] 🧠 Initializing embedding llama-server...
+[2026-09-04 01:19:11] 🧠 Starting embedding llama-server
+[2026-09-04 01:19:11]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q8_0.gguf
+[2026-09-04 01:19:11]    Port: 8081
+[2026-09-04 01:19:13] ✅ Embedding server ready on :8081
+[2026-09-04 01:19:14] ✅ Embedding backend ready
+[2026-09-04 01:19:14] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-04 01:19:14] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-04 01:19:14] 📁 Local LLM log: llama-server.log
+[2026-09-04 01:19:14] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-04 01:19:14] INFO: Application startup complete.
+[2026-09-04 01:19:14] INFO: Application startup complete.
+[2026-09-04 01:19:14] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 01:19:14] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 01:28:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:28:04] 📤 [100.124.101.126] Embedding completed in 0.96s status=200
+[2026-09-04 01:28:04] INFO: 100.124.101.126:60832 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:28:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:28:09] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:28:09] INFO: 100.124.101.126:60832 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:28:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:28:10] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:28:10] INFO: 100.124.101.126:60832 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:28:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:28:10] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:28:10] INFO: 100.124.101.126:60832 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:28:11] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 01:28:11] 🚀 Loading LLM [Ornith-1.5-35B-65k] on port 8080
+[2026-09-04 01:28:55] ✅ LLM [Ornith-1.5-35B-65k] ready in 40s
+[2026-09-04 01:28:55] INFO: 100.124.101.126:33302 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:30:55] 📤 [100.124.101.126] Stream completed v1/chat/completions in 164.93s
+[2026-09-04 01:30:56] INFO: 100.124.101.126:51398 - "GET /metrics HTTP/1.1" 200
+[2026-09-04 01:30:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:30:57] 📤 [100.124.101.126] Embedding completed in 0.66s status=200
+[2026-09-04 01:30:57] INFO: 100.124.101.126:51400 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:30:57] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 01:30:57] INFO: 100.124.101.126:58244 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:33:19] 📤 [100.124.101.126] Stream completed v1/chat/completions in 142.09s
+[2026-09-04 01:33:19] INFO: 100.124.101.126:40736 - "GET /metrics HTTP/1.1" 200
+[2026-09-04 01:33:31] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 01:33:31] INFO: 100.124.101.126:35404 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:37:38] 📤 [100.124.101.126] Stream completed v1/chat/completions in 247.15s
+[2026-09-04 01:37:39] INFO: 100.124.101.126:45272 - "GET /metrics HTTP/1.1" 200
+[2026-09-04 01:37:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:37:39] 📤 [100.124.101.126] Embedding completed in 0.25s status=200
+[2026-09-04 01:37:39] INFO: 100.124.101.126:45288 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:37:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:37:39] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:37:39] INFO: 100.124.101.126:45288 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:37:40] INFO: 100.124.101.126:45292 - "GET /v1/models HTTP/1.1" 200
+[2026-09-04 01:37:40] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 01:37:40] INFO: 100.124.101.126:45304 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:37:54] ⚠️ [100.124.101.126] Client disconnected → cancelled LLM
+[2026-09-04 01:38:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:38:02] 📤 [100.124.101.126] Embedding completed in 0.71s status=200
+[2026-09-04 01:38:02] INFO: 100.124.101.126:39414 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:38:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:38:06] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:38:06] INFO: 100.124.101.126:39414 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:38:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:38:06] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:38:06] INFO: 100.124.101.126:39414 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:38:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:38:06] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:38:07] INFO: 100.124.101.126:39414 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:38:07] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-04 01:38:07] 💤 Unloading LLM from port 8080
+[2026-09-04 01:38:11] 🚀 Loading LLM [Ornith-1.5-35B-IQ3-65k] on port 8080
+[2026-09-04 01:38:42] ✅ LLM [Ornith-1.5-35B-IQ3-65k] ready in 26s
+[2026-09-04 01:38:42] INFO: 100.124.101.126:36882 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:39:44] 📤 [100.124.101.126] Stream completed v1/chat/completions in 96.89s
+[2026-09-04 01:39:44] INFO: 100.124.101.126:48534 - "GET /metrics HTTP/1.1" 200
+[2026-09-04 01:39:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:39:44] 📤 [100.124.101.126] Embedding completed in 0.13s status=200
+[2026-09-04 01:39:44] INFO: 100.124.101.126:48536 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:39:44] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-04 01:39:44] INFO: 100.124.101.126:48552 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:40:54] 📤 [100.124.101.126] Stream completed v1/chat/completions in 69.45s
+[2026-09-04 01:40:54] INFO: 100.124.101.126:35962 - "GET /metrics HTTP/1.1" 200
+[2026-09-04 01:41:06] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-04 01:41:06] INFO: 100.124.101.126:38462 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:43:43] 📤 [100.124.101.126] Stream completed v1/chat/completions in 157.12s
+[2026-09-04 01:43:43] INFO: 100.124.101.126:37950 - "GET /metrics HTTP/1.1" 200
+[2026-09-04 01:43:43] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:43:43] 📤 [100.124.101.126] Embedding completed in 0.12s status=200
+[2026-09-04 01:43:43] INFO: 100.124.101.126:37954 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:43:43] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:43:43] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:43:43] INFO: 100.124.101.126:37954 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:43:44] INFO: 100.124.101.126:37960 - "GET /v1/models HTTP/1.1" 200
+[2026-09-04 01:43:44] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-04 01:43:44] INFO: 100.124.101.126:37964 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 01:44:31] ⚠️ [100.124.101.126] Client disconnected → cancelled LLM
+[2026-09-04 01:45:34] INFO: Shutting down
+[2026-09-04 01:45:34] INFO: Shutting down
+[2026-09-04 01:45:34] INFO: Finished server process [80360]
+[2026-09-04 01:45:34] INFO: Finished server process [80360]
+[2026-09-04 01:45:34] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-09-04 01:45:34] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-09-04 02:14:09] 🔥 Starting Smart LLM Gateway
+[2026-09-04 02:14:09] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-04 02:14:09] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-04 02:14:09] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-04 02:14:09] 🧠 Initializing embedding llama-server...
+[2026-09-04 02:14:16] 🧠 Starting embedding llama-server
+[2026-09-04 02:14:16]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q8_0.gguf
+[2026-09-04 02:14:16]    Port: 8081
+[2026-09-04 02:14:19] ✅ Embedding server ready on :8081
+[2026-09-04 02:14:19] ✅ Embedding backend ready
+[2026-09-04 02:14:19] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-04 02:14:19] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-04 02:14:19] 📁 Local LLM log: llama-server.log
+[2026-09-04 02:14:19] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-04 02:14:19] INFO: Application startup complete.
+[2026-09-04 02:14:19] INFO: Application startup complete.
+[2026-09-04 02:14:19] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 02:14:19] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 02:15:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:15:25] 📤 [100.124.101.126] Embedding completed in 1.07s status=200
+[2026-09-04 02:15:25] INFO: 100.124.101.126:43498 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:15:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:15:29] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 02:15:29] INFO: 100.124.101.126:43498 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:15:30] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:15:30] 📤 [100.124.101.126] Embedding completed in 0.13s status=200
+[2026-09-04 02:15:30] INFO: 100.124.101.126:43498 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:15:30] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:15:30] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 02:15:30] INFO: 100.124.101.126:43498 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:15:30] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 02:15:30] 🚀 Loading LLM [Ornith-1.5-35B-65k] on port 8080
+[2026-09-04 02:15:50] ✅ LLM [Ornith-1.5-35B-65k] ready in 16s
+[2026-09-04 02:15:50] INFO: 100.124.101.126:33382 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 02:19:03] ⚠️ [100.124.101.126] Client disconnected → cancelled LLM
+[2026-09-04 02:21:05] INFO: Shutting down
+[2026-09-04 02:21:05] INFO: Shutting down
+[2026-09-04 02:21:05] INFO: Waiting for application shutdown.
+[2026-09-04 02:21:05] INFO: Waiting for application shutdown.
+[2026-09-04 02:21:06] 🛑 Gateway shutting down...
+[2026-09-04 02:21:06] 💤 Unloading LLM from port 8080
+[2026-09-04 02:21:08] 🛑 Stopping embedding llama-server
+[2026-09-04 02:21:11] INFO: Application shutdown complete.
+[2026-09-04 02:21:11] INFO: Application shutdown complete.
+[2026-09-04 02:21:11] INFO: Finished server process [34836]
+[2026-09-04 02:21:11] INFO: Finished server process [34836]
+[2026-09-04 02:21:23] 🔥 Starting Smart LLM Gateway
+[2026-09-04 02:21:23] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-04 02:21:23] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-04 02:21:23] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-04 02:21:23] 🧠 Initializing embedding llama-server...
+[2026-09-04 02:21:29] 🧠 Starting embedding llama-server
+[2026-09-04 02:21:29]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q5_0.gguf
+[2026-09-04 02:21:30]    Port: 8081
+[2026-09-04 02:21:31] ✅ Embedding server ready on :8081
+[2026-09-04 02:21:31] ✅ Embedding backend ready
+[2026-09-04 02:21:31] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-04 02:21:31] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-04 02:21:32] 📁 Local LLM log: llama-server.log
+[2026-09-04 02:21:32] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-04 02:21:32] INFO: Application startup complete.
+[2026-09-04 02:21:32] INFO: Application startup complete.
+[2026-09-04 02:21:32] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 02:21:32] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 02:21:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:21:34] 📤 [100.124.101.126] Embedding completed in 0.72s status=200
+[2026-09-04 02:21:34] INFO: 100.124.101.126:51462 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:21:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:21:38] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 02:21:38] INFO: 100.124.101.126:51462 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:21:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:21:39] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 02:21:39] INFO: 100.124.101.126:51462 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:21:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:21:39] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 02:21:39] INFO: 100.124.101.126:51462 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:21:39] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 02:21:39] 🚀 Loading LLM [Ornith-1.5-35B-65k] on port 8080
+[2026-09-04 02:22:08] ✅ LLM [Ornith-1.5-35B-65k] ready in 24s
+[2026-09-04 02:22:08] INFO: 100.124.101.126:53474 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 02:22:28] ⚠️ [100.124.101.126] Client disconnected → cancelled LLM
+[2026-09-04 02:23:15] INFO: Shutting down
+[2026-09-04 02:23:15] INFO: Shutting down
+[2026-09-04 02:23:15] INFO: Finished server process [95564]
+[2026-09-04 02:23:15] INFO: Finished server process [95564]
+[2026-09-04 02:23:15] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-09-04 02:23:15] ERROR: Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 641, in run_until_complete
+    self.run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 608, in run_forever
+    self._run_once()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\base_events.py", line 1936, in _run_once
+    handle._run()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 77, in serve
+    with self.capture_signals():
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\server.py", line 337, in capture_signals
+    signal.raise_signal(captured_signal)
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\runners.py", line 157, in _on_sigint
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\starlette\routing.py", line 645, in lifespan
+    await receive()
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ACER\miniconda3\envs\llama-gateway\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+[2026-09-04 02:23:18] 🔥 Starting Smart LLM Gateway
+[2026-09-04 02:23:18] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-04 02:23:19] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-04 02:23:19] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-04 02:23:19] 🧠 Initializing embedding llama-server...
+[2026-09-04 02:23:24] 🧠 Starting embedding llama-server
+[2026-09-04 02:23:24]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q5_0.gguf
+[2026-09-04 02:23:24]    Port: 8081
+[2026-09-04 02:23:26] ✅ Embedding server ready on :8081
+[2026-09-04 02:23:26] ✅ Embedding backend ready
+[2026-09-04 02:23:26] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-04 02:23:26] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-04 02:23:26] 📁 Local LLM log: llama-server.log
+[2026-09-04 02:23:26] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-04 02:23:26] INFO: Application startup complete.
+[2026-09-04 02:23:26] INFO: Application startup complete.
+[2026-09-04 02:23:26] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 02:23:26] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 02:23:26] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:23:28] 📤 [100.124.101.126] Embedding completed in 1.45s status=200
+[2026-09-04 02:23:28] INFO: 100.124.101.126:60974 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:23:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:23:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 02:23:32] INFO: 100.124.101.126:60974 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:23:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:23:33] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 02:23:33] INFO: 100.124.101.126:60974 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:23:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 02:23:33] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 02:23:33] INFO: 100.124.101.126:60974 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 02:23:33] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
+[2026-09-04 02:23:33] 🚀 Loading LLM [Ornith-1.5-35B-65k] on port 8080
