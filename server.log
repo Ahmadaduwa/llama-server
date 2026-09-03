@@ -68235,3 +68235,5 @@ asyncio.exceptions.CancelledError
 [2026-09-04 02:23:33] INFO: 100.124.101.126:60974 - "POST /v1/embeddings HTTP/1.1" 200
 [2026-09-04 02:23:33] 📥 [100.124.101.126] Incoming v1/chat/completions for [ornith-1.5-35b-65k] (stream=True)
 [2026-09-04 02:23:33] 🚀 Loading LLM [Ornith-1.5-35B-65k] on port 8080
+[2026-09-04 02:23:52] ✅ LLM [Ornith-1.5-35B-65k] ready in 16s
+[2026-09-04 02:23:52] INFO: 100.124.101.126:60980 - "POST /v1/chat/completions HTTP/1.1" 200
