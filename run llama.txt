@@ -2,80 +2,95 @@
 Qwen 3.6 35B A3B Uncensored (IQ4_XS) — MoE Hybrid Offload
 ================================================================================
 65,536 (65k) Context:
-./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 -cnv
 
 32,768 (32k) Context:
-./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+16,384 (16k) Context:
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 Vision / Multimodal (with mmproj):
-./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --mmproj model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --mmproj model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 
 ================================================================================
 Qwen 3.6 35B A3B Uncensored (IQ3_M) — MoE Hybrid Offload
 ================================================================================
 65,536 (65k) Context:
-./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 -cnv
 
 32,768 (32k) Context:
-./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+16,384 (16k) Context:
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --port 8080 -ngl 28 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 Vision / Multimodal (with mmproj):
-./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --mmproj model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf --mmproj model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 
 ================================================================================
 Ornith 1.5 35B A3B Abliterated (IQ4_XS) — MoE Hybrid Offload
 ================================================================================
 65,536 (65k) Context:
-./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 -cnv
 
 32,768 (32k) Context:
-./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+16,384 (16k) Context:
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 
 ================================================================================
 Ornith 1.5 35B A3B Abliterated (IQ3_M) — MoE Hybrid Offload
 ================================================================================
 65,536 (65k) Context:
-./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 -cnv
 
 32,768 (32k) Context:
-./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+16,384 (16k) Context:
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf --port 8080 -ngl 28 -c 16384 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 
 ================================================================================
 Ornith 1.5 9B Uncensored i1 (Q5_K_M) — Dense High-Precision & Speed
 ================================================================================
 65,536 (65k) Context:
-./llama-server.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 -cnv
+./llama-server.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 -cnv
 
 32,768 (32k) Context:
-./llama-server.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-server.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 
 ================================================================================
 Qwen 3.5 9B Uncensored (Q4_K_M) — High-Precision & Deep-Context Setup
 ================================================================================
-65,536 (65k) — "High-Precision & High-Speed Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 -cnv
+196,608 (196k) — "Deep-Context & Long-Horizon Setup (9B)"
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 196608 -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 -cnv
 
 131,072 (132k) — "High-Precision & High-Speed Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 131072 -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 -cnv
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 131072 -fa on -ctk q4_0 -ctv q4_0 -t 6 -tb 6 -cnv
 
-196,608 (196k) — "Deep-Context & Long-Horizon Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
-./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 196608 -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 -cnv
+65,536 (65k) — "High-Precision & High-Speed Setup (9B)"
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 -cnv
+
+32,768 (32k) Context:
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
 Vision / Multimodal (with mmproj):
-./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --mmproj model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --mmproj model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 6 -tb 6 --parallel 3 --cont-batching --jinja --slot-prompt-similarity 0.5 --cache-reuse 256
 
 
 ================================================================================

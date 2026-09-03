@@ -65900,3 +65900,1958 @@ asyncio.exceptions.CancelledError
 [2026-09-04 00:15:53] INFO: Application shutdown complete.
 [2026-09-04 00:15:53] INFO: Finished server process [79312]
 [2026-09-04 00:15:53] INFO: Finished server process [79312]
+[2026-09-04 00:37:51] 🔥 Starting Smart LLM Gateway
+[2026-09-04 00:37:51] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-04 00:37:51] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-04 00:37:51] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-04 00:37:51] 🧠 Initializing embedding llama-server...
+[2026-09-04 00:37:57] 🧠 Starting embedding llama-server
+[2026-09-04 00:37:57]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q8_0.gguf
+[2026-09-04 00:37:57]    Port: 8081
+[2026-09-04 00:38:00] ✅ Embedding server ready on :8081
+[2026-09-04 00:38:00] ✅ Embedding backend ready
+[2026-09-04 00:38:00] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-04 00:38:00] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-04 00:38:00] 📁 Local LLM log: llama-server.log
+[2026-09-04 00:38:00] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-04 00:38:00] INFO: Application startup complete.
+[2026-09-04 00:38:00] INFO: Application startup complete.
+[2026-09-04 00:38:00] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 00:38:00] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 00:38:55] INFO: 100.124.101.126:48434 - "GET /v1/models HTTP/1.1" 200
+[2026-09-04 00:39:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:07] 📤 [100.124.101.126] Embedding completed in 0.71s status=200
+[2026-09-04 00:39:07] INFO: 100.124.101.126:36970 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:20] 📤 [100.124.101.126] Embedding completed in 0.64s status=200
+[2026-09-04 00:39:20] INFO: 100.124.101.126:44286 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:28] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:28] INFO: 100.124.101.126:56328 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:30] 📤 [100.124.101.126] Embedding completed in 0.54s status=200
+[2026-09-04 00:39:30] INFO: 100.124.101.126:56340 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:31] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:31] 📤 [100.124.101.126] Embedding completed in 0.47s status=200
+[2026-09-04 00:39:31] INFO: 100.124.101.126:56350 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:32] 📤 [100.124.101.126] Embedding completed in 0.43s status=200
+[2026-09-04 00:39:33] INFO: 100.124.101.126:56366 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:34] 📤 [100.124.101.126] Embedding completed in 0.46s status=200
+[2026-09-04 00:39:34] INFO: 100.124.101.126:56372 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:35] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:35] 📤 [100.124.101.126] Embedding completed in 0.46s status=200
+[2026-09-04 00:39:35] INFO: 100.124.101.126:56380 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:37] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:39:37] INFO: 100.124.101.126:56484 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:38] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:39:38] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:39] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:39] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:40] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:40] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:40] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:40] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:40] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 00:39:40] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:40] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 00:39:40] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:40] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:41] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:41] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:41] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:41] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:41] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:41] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:39:41] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:41] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:41] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:41] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:41] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:42] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 00:39:42] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:42] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:42] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:42] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:42] INFO: 100.124.101.126:56496 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:43] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:39:43] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:44] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:44] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:44] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:45] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:45] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:45] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:45] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:45] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:45] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:45] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:45] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:45] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:45] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:46] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:46] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:46] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:46] INFO: 100.124.101.126:56508 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:47] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:39:47] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:47] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:47] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:48] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:48] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:48] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:48] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:48] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:48] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:49] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:49] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:49] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:49] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:50] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:50] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:50] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:50] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:50] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:50] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:50] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:50] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:50] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:50] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:51] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:51] INFO: 100.124.101.126:53980 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:51] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:39:51] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:52] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:52] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:53] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:53] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:53] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:53] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:53] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:53] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:53] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:53] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:54] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:54] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:54] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:54] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:54] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:54] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:54] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:54] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:54] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:55] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:55] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:39:55] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:55] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 00:39:55] INFO: 100.124.101.126:53992 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:56] 📤 [100.124.101.126] Embedding completed in 0.63s status=200
+[2026-09-04 00:39:56] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:57] 📤 [100.124.101.126] Embedding completed in 0.12s status=200
+[2026-09-04 00:39:57] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:58] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:58] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:58] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:58] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:58] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:39:58] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:58] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:58] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:58] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:58] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:59] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:59] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:59] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:59] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:59] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:39:59] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:59] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:39:59] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:39:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:39:59] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:39:59] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:00] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:00] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:00] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:00] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:00] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:00] INFO: 100.124.101.126:54004 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:01] 📤 [100.124.101.126] Embedding completed in 0.56s status=200
+[2026-09-04 00:40:01] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:02] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:02] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:03] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:03] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:03] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:03] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:03] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:03] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:03] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:04] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:04] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:04] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:04] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 00:40:04] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:04] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:04] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:04] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:04] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:05] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 00:40:05] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:05] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:05] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:05] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:05] INFO: 100.124.101.126:50672 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:06] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:40:06] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:07] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:07] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:08] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:08] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:08] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:08] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:08] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 00:40:08] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:08] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:09] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:09] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:09] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:09] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:09] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:09] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:09] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:09] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 00:40:09] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:09] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:10] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:10] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:10] INFO: 100.124.101.126:50688 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:10] 📤 [100.124.101.126] Embedding completed in 0.49s status=200
+[2026-09-04 00:40:10] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:11] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:11] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:12] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:12] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:12] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:12] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:13] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:13] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:13] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 00:40:13] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:13] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:13] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:13] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:13] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:14] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:14] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:14] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:14] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:14] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:14] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:14] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:14] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:14] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:14] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:15] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:15] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:15] INFO: 100.124.101.126:53276 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:16] 📤 [100.124.101.126] Embedding completed in 0.46s status=200
+[2026-09-04 00:40:16] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:16] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:16] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:17] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:17] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:17] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:17] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:18] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:18] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:18] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:18] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:18] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:18] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:18] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:18] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:18] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:18] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:18] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:19] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:19] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:19] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:19] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:19] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:19] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:19] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:20] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:20] INFO: 100.124.101.126:53282 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:20] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:40:20] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:21] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:21] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:21] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:22] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:22] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:22] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:22] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:22] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:22] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:22] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:23] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:23] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:23] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:23] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:23] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:23] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:23] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:23] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:23] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:24] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:24] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:24] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:24] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:24] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:24] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:24] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:24] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:24] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:24] INFO: 100.124.101.126:39620 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:25] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:25] 📤 [100.124.101.126] Embedding completed in 0.44s status=200
+[2026-09-04 00:40:25] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:26] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:26] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:26] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:27] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:27] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:27] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:27] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:27] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:27] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:27] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:27] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:27] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:27] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:28] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:28] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:28] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:28] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:28] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:28] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:28] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:28] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:28] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:28] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:29] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:29] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:29] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:29] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:29] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:29] INFO: 100.124.101.126:39624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:30] 📤 [100.124.101.126] Embedding completed in 0.47s status=200
+[2026-09-04 00:40:30] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:31] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:31] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:31] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:31] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:31] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:31] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:31] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:31] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:32] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:32] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:32] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:32] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:32] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:32] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:32] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:33] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:33] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:33] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:33] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 00:40:33] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:33] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:33] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:33] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:33] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:33] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:34] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:34] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:34] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:34] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:34] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:34] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:34] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:34] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:34] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:35] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:35] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:35] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:35] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:35] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:35] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:35] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:35] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:35] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:35] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:35] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:35] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:35] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 00:40:35] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:35] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:36] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:36] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:36] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:36] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:36] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:36] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:36] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:36] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:36] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:36] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:37] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:37] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:37] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:37] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:37] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:37] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:37] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:37] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:37] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:38] INFO: 100.124.101.126:53704 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:38] 📤 [100.124.101.126] Embedding completed in 0.58s status=200
+[2026-09-04 00:40:38] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:39] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:39] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:40] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:40] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:40] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:40] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:40] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:40] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:41] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:41] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:41] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:41] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:41] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:41] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:41] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:41] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:41] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:41] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:42] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:42] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:42] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:42] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:42] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:42] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:42] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:42] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:42] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:43] INFO: 100.124.101.126:58368 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:43] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:43] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:40:43] INFO: 100.124.101.126:58370 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:45] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:40:45] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:45] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:45] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:46] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:46] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:46] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:47] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:47] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:47] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:47] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:47] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:47] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:47] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:47] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:47] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:47] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:48] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:48] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:48] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:48] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:48] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:48] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:48] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:48] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:48] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:48] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:49] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:49] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:49] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:49] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:49] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:49] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:49] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:49] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:50] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:50] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:50] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:50] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:50] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:50] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:50] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:50] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:50] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:50] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:51] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:51] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:51] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:51] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:51] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:51] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:51] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:51] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:40:51] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:51] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:52] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:52] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:52] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:52] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:52] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:52] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:52] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:52] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:52] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:53] 📤 [100.124.101.126] Embedding completed in 0.13s status=200
+[2026-09-04 00:40:53] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:53] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 00:40:53] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:53] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:53] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:53] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:53] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:54] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:54] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:54] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:54] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:54] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:54] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:54] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:40:54] INFO: 100.124.101.126:58378 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:55] 📤 [100.124.101.126] Embedding completed in 0.44s status=200
+[2026-09-04 00:40:55] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:56] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:56] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:57] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:57] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:57] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:57] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:57] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:57] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:57] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:57] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:57] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:58] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:58] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:58] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:58] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:58] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:58] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:58] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:58] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:58] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:58] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:58] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:59] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:40:59] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:59] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:40:59] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:40:59] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:40:59] INFO: 100.124.101.126:43226 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:40:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:00] 📤 [100.124.101.126] Embedding completed in 0.43s status=200
+[2026-09-04 00:41:00] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:01] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:01] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:01] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:01] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:02] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:02] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:02] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:02] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:02] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:02] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:02] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:02] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:02] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:02] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:03] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:03] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:03] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:03] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:03] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:41:03] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:03] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:41:03] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:04] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:41:04] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:04] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:04] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:04] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:04] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:05] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:05] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:05] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:05] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:05] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:05] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:05] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:41:05] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:05] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:05] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:06] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:41:06] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:06] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 00:41:06] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:06] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:41:06] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:06] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:06] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:06] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:06] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:07] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:07] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 00:41:07] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:07] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:07] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:07] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:08] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:08] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:08] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:08] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 00:41:08] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 00:41:08] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:08] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:41:08] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:41:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:41:09] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 00:41:09] INFO: 100.124.101.126:58732 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:15] 📤 [100.124.101.126] Embedding completed in 0.49s status=200
+[2026-09-04 00:53:16] INFO: 100.124.101.126:34020 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:16] 📤 [100.124.101.126] Embedding completed in 0.51s status=200
+[2026-09-04 00:53:16] INFO: 100.124.101.126:34036 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:17] 📤 [100.124.101.126] Embedding completed in 0.55s status=200
+[2026-09-04 00:53:17] INFO: 100.124.101.126:58826 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:18] 📤 [100.124.101.126] Embedding completed in 0.55s status=200
+[2026-09-04 00:53:18] INFO: 100.124.101.126:58828 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:19] 📤 [100.124.101.126] Embedding completed in 0.49s status=200
+[2026-09-04 00:53:20] INFO: 100.124.101.126:58832 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:20] 📤 [100.124.101.126] Embedding completed in 0.46s status=200
+[2026-09-04 00:53:20] INFO: 100.124.101.126:58836 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:21] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:21] 📤 [100.124.101.126] Embedding completed in 0.47s status=200
+[2026-09-04 00:53:21] INFO: 100.124.101.126:58848 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:22] 📤 [100.124.101.126] Embedding completed in 0.47s status=200
+[2026-09-04 00:53:22] INFO: 100.124.101.126:58862 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:23] 📤 [100.124.101.126] Embedding completed in 0.51s status=200
+[2026-09-04 00:53:23] INFO: 100.124.101.126:58868 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:25] 📤 [100.124.101.126] Embedding completed in 0.58s status=200
+[2026-09-04 00:53:25] INFO: 100.124.101.126:58878 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:26] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:53:26] 📤 [100.124.101.126] Embedding completed in 0.48s status=200
+[2026-09-04 00:53:26] INFO: 100.124.101.126:58886 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:53:27] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-04 00:53:27] 🚀 Loading LLM [Ornith-1.5-35B-IQ3-65k] on port 8080
+[2026-09-04 00:54:16] ✅ LLM [Ornith-1.5-35B-IQ3-65k] ready in 44s
+[2026-09-04 00:54:16] INFO: 100.124.101.126:58786 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-04 00:55:04] ⚠️ [100.124.101.126] Client disconnected → cancelled LLM
+[2026-09-04 00:56:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:18] 📤 [100.124.101.126] Embedding completed in 0.58s status=200
+[2026-09-04 00:56:18] INFO: 100.124.101.126:46988 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:19] 📤 [100.124.101.126] Embedding completed in 0.47s status=200
+[2026-09-04 00:56:19] INFO: 100.124.101.126:46994 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:20] 📤 [100.124.101.126] Embedding completed in 0.50s status=200
+[2026-09-04 00:56:20] INFO: 100.124.101.126:47002 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:21] 📤 [100.124.101.126] Embedding completed in 0.43s status=200
+[2026-09-04 00:56:21] INFO: 100.124.101.126:47018 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:21] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:21] 📤 [100.124.101.126] Embedding completed in 0.44s status=200
+[2026-09-04 00:56:21] INFO: 100.124.101.126:47032 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:22] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:56:22] INFO: 100.124.101.126:47034 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:23] 📤 [100.124.101.126] Embedding completed in 0.47s status=200
+[2026-09-04 00:56:23] INFO: 100.124.101.126:47046 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:56:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:56:24] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:56:24] INFO: 100.124.101.126:47062 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:47] 📤 [100.124.101.126] Embedding completed in 0.55s status=200
+[2026-09-04 00:59:47] INFO: 100.124.101.126:45086 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:48] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:59:48] INFO: 100.124.101.126:45094 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:48] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:48] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 00:59:48] INFO: 100.124.101.126:45110 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:49] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:59:49] INFO: 100.124.101.126:45120 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:50] 📤 [100.124.101.126] Embedding completed in 0.46s status=200
+[2026-09-04 00:59:50] INFO: 100.124.101.126:45136 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:51] 📤 [100.124.101.126] Embedding completed in 0.41s status=200
+[2026-09-04 00:59:51] INFO: 100.124.101.126:45142 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:52] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 00:59:52] INFO: 100.124.101.126:45148 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 00:59:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 00:59:53] 📤 [100.124.101.126] Embedding completed in 0.41s status=200
+[2026-09-04 00:59:53] INFO: 100.124.101.126:45164 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:02] INFO: Shutting down
+[2026-09-04 01:00:02] INFO: Shutting down
+[2026-09-04 01:00:02] INFO: Waiting for application shutdown.
+[2026-09-04 01:00:02] INFO: Waiting for application shutdown.
+[2026-09-04 01:00:02] 🛑 Gateway shutting down...
+[2026-09-04 01:00:02] 💤 Unloading LLM from port 8080
+[2026-09-04 01:00:06] 🛑 Stopping embedding llama-server
+[2026-09-04 01:00:09] INFO: Application shutdown complete.
+[2026-09-04 01:00:09] INFO: Application shutdown complete.
+[2026-09-04 01:00:09] INFO: Finished server process [79148]
+[2026-09-04 01:00:09] INFO: Finished server process [79148]
+[2026-09-04 01:00:10] 🔥 Starting Smart LLM Gateway
+[2026-09-04 01:00:11] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-04 01:00:11] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-04 01:00:11] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-04 01:00:11] 🧠 Initializing embedding llama-server...
+[2026-09-04 01:00:17] 🧠 Starting embedding llama-server
+[2026-09-04 01:00:17]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q8_0.gguf
+[2026-09-04 01:00:17]    Port: 8081
+[2026-09-04 01:00:19] ✅ Embedding server ready on :8081
+[2026-09-04 01:00:19] ✅ Embedding backend ready
+[2026-09-04 01:00:19] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-04 01:00:19] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-04 01:00:20] 📁 Local LLM log: llama-server.log
+[2026-09-04 01:00:20] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-04 01:00:20] INFO: Application startup complete.
+[2026-09-04 01:00:20] INFO: Application startup complete.
+[2026-09-04 01:00:20] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 01:00:20] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-04 01:00:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:40] 📤 [100.124.101.126] Embedding completed in 1.77s status=200
+[2026-09-04 01:00:40] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:41] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:00:41] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:42] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:00:42] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:43] 📤 [100.124.101.126] Embedding completed in 1.33s status=200
+[2026-09-04 01:00:43] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:43] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:43] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:00:43] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:00:44] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:00:44] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:00:44] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:44] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:00:44] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:00:44] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:46] 📤 [100.124.101.126] Embedding completed in 1.27s status=200
+[2026-09-04 01:00:46] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:46] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:00:46] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:46] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:00:46] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:46] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:00:46] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:00:46] INFO: 100.124.101.126:49542 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:48] 📤 [100.124.101.126] Embedding completed in 1.89s status=200
+[2026-09-04 01:00:48] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:49] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:00:49] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:50] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:00:50] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:50] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:00:50] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:50] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:00:50] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:51] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 01:00:51] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:51] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:00:51] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:51] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:00:51] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:51] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:00:51] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:51] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:00:51] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:52] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:00:52] INFO: 100.124.101.126:59006 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:53] 📤 [100.124.101.126] Embedding completed in 1.05s status=200
+[2026-09-04 01:00:53] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:54] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:00:54] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:55] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:00:55] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:55] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:00:55] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:55] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:00:55] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:55] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:00:55] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:55] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:00:56] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:56] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:00:56] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:56] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:00:56] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:56] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:00:56] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:56] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:00:56] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:57] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:00:57] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:57] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:00:57] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:57] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:00:57] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:57] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:00:57] INFO: 100.124.101.126:59008 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:00:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:00:59] 📤 [100.124.101.126] Embedding completed in 1.42s status=200
+[2026-09-04 01:00:59] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:00] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:01:00] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:01] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:01] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:01] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:01] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:01] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:01] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:01] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 01:01:01] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:01] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:02] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:02] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:02] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:02] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:02] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:02] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:02] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:02] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:02] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:03] 📤 [100.124.101.126] Embedding completed in 0.15s status=200
+[2026-09-04 01:01:03] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:03] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:03] INFO: 100.124.101.126:52664 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:04] 📤 [100.124.101.126] Embedding completed in 1.12s status=200
+[2026-09-04 01:01:04] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:05] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:05] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:06] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:06] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:06] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:06] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:06] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:06] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:06] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:06] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:06] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:06] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:07] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:07] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:07] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:07] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:07] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:07] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:07] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:08] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:08] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:08] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:08] INFO: 100.124.101.126:52668 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:09] 📤 [100.124.101.126] Embedding completed in 0.45s status=200
+[2026-09-04 01:01:09] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:09] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:09] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:10] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:10] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:10] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:10] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:10] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:10] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:11] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:11] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:11] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:11] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:11] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:11] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:11] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:11] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:11] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:11] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:11] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:12] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:12] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:12] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:12] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:12] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:12] INFO: 100.124.101.126:35502 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:13] 📤 [100.124.101.126] Embedding completed in 0.39s status=200
+[2026-09-04 01:01:13] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:13] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:13] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:14] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:14] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:14] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:14] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:14] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:14] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:15] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:15] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:15] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:15] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:15] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:15] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:15] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:16] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:16] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:16] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:16] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:16] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:01:16] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:16] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:16] INFO: 100.124.101.126:35516 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:17] 📤 [100.124.101.126] Embedding completed in 0.54s status=200
+[2026-09-04 01:01:17] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:18] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:18] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:19] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:19] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:19] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:19] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:19] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:19] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:19] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:19] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:20] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:20] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:20] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:20] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:20] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:20] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:20] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:20] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:20] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:20] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:20] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:21] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:21] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:21] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:21] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:21] INFO: 100.124.101.126:37190 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:21] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:21] 📤 [100.124.101.126] Embedding completed in 0.54s status=200
+[2026-09-04 01:01:21] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:22] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:22] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:22] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:23] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:23] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:23] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:23] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:23] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:23] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:23] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:23] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:24] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:24] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:24] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:24] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:24] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:24] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:24] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:24] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:24] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:24] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:24] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:24] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:25] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:25] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:25] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:25] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:25] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:25] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:25] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:25] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:25] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:25] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:25] INFO: 100.124.101.126:37198 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:25] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:26] 📤 [100.124.101.126] Embedding completed in 0.51s status=200
+[2026-09-04 01:01:26] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:27] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:27] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:27] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:27] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:27] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:28] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:28] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:28] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:28] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:28] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:28] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:28] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:28] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:28] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:28] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:28] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:28] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:29] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:29] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:01:29] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:29] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:29] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:29] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:29] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:29] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:29] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:29] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:29] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:30] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:30] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:30] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:30] INFO: 100.124.101.126:37212 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:30] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:30] 📤 [100.124.101.126] Embedding completed in 0.43s status=200
+[2026-09-04 01:01:30] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:31] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:31] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:31] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:32] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:32] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:32] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:32] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:32] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:32] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:33] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:33] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:33] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:33] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:33] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:33] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:33] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:33] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:33] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:33] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:33] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:33] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:34] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:34] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:34] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:34] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:34] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:34] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:34] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:34] INFO: 100.124.101.126:54058 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:34] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:35] 📤 [100.124.101.126] Embedding completed in 0.44s status=200
+[2026-09-04 01:01:35] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:36] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:36] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:36] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:36] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:36] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:36] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:37] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:37] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:37] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:37] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:37] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:37] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:37] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:37] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:37] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:37] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:37] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:37] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:38] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:38] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:38] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:38] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:38] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:38] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:38] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:38] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:38] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:38] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:38] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:39] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:39] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:39] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:39] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:39] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:39] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:39] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:39] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:39] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:39] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:39] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:39] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:39] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:40] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:40] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:40] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:40] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:40] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:40] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:40] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:40] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:40] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:40] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:40] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:41] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:41] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:41] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:41] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:41] 📤 [100.124.101.126] Embedding completed in 0.04s status=200
+[2026-09-04 01:01:41] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:41] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:41] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:41] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:41] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:41] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:41] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:42] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:42] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:42] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:42] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:42] INFO: 100.124.101.126:54068 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:42] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:43] 📤 [100.124.101.126] Embedding completed in 0.52s status=200
+[2026-09-04 01:01:43] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:44] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:44] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:44] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:44] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:44] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:45] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:45] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:01:45] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:45] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:45] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:45] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:45] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:46] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:46] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:46] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:46] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:46] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:46] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:46] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:46] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:47] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:01:47] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:47] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:47] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:47] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:47] INFO: 100.124.101.126:47172 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:47] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:48] 📤 [100.124.101.126] Embedding completed in 0.44s status=200
+[2026-09-04 01:01:48] INFO: 100.124.101.126:42194 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:49] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:49] 📤 [100.124.101.126] Embedding completed in 0.42s status=200
+[2026-09-04 01:01:49] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:50] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:50] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:50] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:51] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:01:51] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:51] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:51] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:51] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:51] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:51] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:01:51] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:51] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:01:51] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:51] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:52] 📤 [100.124.101.126] Embedding completed in 0.17s status=200
+[2026-09-04 01:01:52] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:52] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:52] 📤 [100.124.101.126] Embedding completed in 0.29s status=200
+[2026-09-04 01:01:53] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:53] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:53] 📤 [100.124.101.126] Embedding completed in 0.24s status=200
+[2026-09-04 01:01:54] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:54] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:54] 📤 [100.124.101.126] Embedding completed in 0.41s status=200
+[2026-09-04 01:01:54] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:55] 📤 [100.124.101.126] Embedding completed in 0.15s status=200
+[2026-09-04 01:01:55] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:55] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 01:01:55] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:55] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:55] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:01:55] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:56] 📤 [100.124.101.126] Embedding completed in 0.15s status=200
+[2026-09-04 01:01:56] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:56] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:56] 📤 [100.124.101.126] Embedding completed in 0.26s status=200
+[2026-09-04 01:01:57] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:57] 📤 [100.124.101.126] Embedding completed in 0.18s status=200
+[2026-09-04 01:01:57] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:57] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:57] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 01:01:58] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:58] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:01:58] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:58] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:01:58] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:58] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:58] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:58] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:58] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:01:59] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:59] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:01:59] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:59] 📤 [100.124.101.126] Embedding completed in 0.09s status=200
+[2026-09-04 01:01:59] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:59] 📤 [100.124.101.126] Embedding completed in 0.11s status=200
+[2026-09-04 01:01:59] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:01:59] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:01:59] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:00] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:00] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:00] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:00] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:00] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:00] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:00] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:00] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:00] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:00] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:00] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:00] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:01] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:01] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:01] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:01] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:01] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:01] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:01] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:01] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:02:01] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:02] 📤 [100.124.101.126] Embedding completed in 0.20s status=200
+[2026-09-04 01:02:02] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:02] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:02:02] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:02] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:02] 📤 [100.124.101.126] Embedding completed in 0.13s status=200
+[2026-09-04 01:02:03] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:03] 📤 [100.124.101.126] Embedding completed in 0.18s status=200
+[2026-09-04 01:02:03] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:03] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:03] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:03] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:04] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:04] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:02:04] INFO: 100.124.101.126:42196 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:04] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:05] 📤 [100.124.101.126] Embedding completed in 0.58s status=200
+[2026-09-04 01:02:05] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:06] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:06] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:06] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:07] 📤 [100.124.101.126] Embedding completed in 0.15s status=200
+[2026-09-04 01:02:07] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:07] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:07] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:07] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:07] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:07] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:07] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:07] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:07] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:08] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:08] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:08] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:08] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:08] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:08] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:08] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:08] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:09] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:09] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:09] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:09] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:09] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:09] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:09] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:09] INFO: 100.124.101.126:53876 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:09] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:10] 📤 [100.124.101.126] Embedding completed in 0.64s status=200
+[2026-09-04 01:02:10] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:11] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:11] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:11] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:12] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:12] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:12] 📤 [100.124.101.126] Embedding completed in 0.12s status=200
+[2026-09-04 01:02:12] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:12] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:12] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:12] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:12] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:12] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:12] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:13] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:13] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:13] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:13] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:13] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:13] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:13] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:13] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:13] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:13] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:14] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:14] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:14] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:14] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:14] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:14] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:14] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:14] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:14] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:14] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:15] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:15] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:15] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:15] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:15] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:15] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-04 01:02:15] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:15] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:15] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:15] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:15] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:16] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:16] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:16] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:16] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:16] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:16] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:16] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:16] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:16] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:16] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:16] 📤 [100.124.101.126] Embedding completed in 0.10s status=200
+[2026-09-04 01:02:17] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:17] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:17] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:17] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:17] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:17] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:17] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:17] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:17] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:17] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:18] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:18] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:18] 📤 [100.124.101.126] Embedding completed in 0.06s status=200
+[2026-09-04 01:02:18] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:18] 📤 [100.124.101.126] Embedding completed in 0.07s status=200
+[2026-09-04 01:02:18] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:18] 📤 [100.124.101.126] Embedding completed in 0.13s status=200
+[2026-09-04 01:02:18] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:18] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:18] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:19] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-04 01:02:19] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-04 01:02:19] 📤 [100.124.101.126] Embedding completed in 0.05s status=200
+[2026-09-04 01:02:19] INFO: 100.124.101.126:39244 - "POST /v1/embeddings HTTP/1.1" 200
