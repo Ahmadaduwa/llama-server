@@ -1,19 +1,59 @@
+================================================================================
+Qwen 3.6 35B A3B Uncensored (IQ4_XS) — MoE Hybrid Offload
+================================================================================
+65,536 (65k) Context:
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+
+32,768 (32k) Context:
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+Vision / Multimodal (with mmproj):
+./llama-server.exe -m model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf --mmproj model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+
+================================================================================
+Ornith 1.5 35B A3B Abliterated (IQ4_XS) — MoE Hybrid Offload
+================================================================================
+65,536 (65k) Context:
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-cli.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+
+32,768 (32k) Context:
+./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf --port 8080 -ngl 28 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+
+================================================================================
+Ornith 1.5 9B Uncensored i1 (Q5_K_M) — Dense High-Precision & Speed
+================================================================================
+65,536 (65k) Context:
+./llama-server.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-cli.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 -cnv
+
+32,768 (32k) Context:
+./llama-server.exe -m model\Ornith-1.5-9B-uncensored-i1-GGUF\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf --port 8080 -ngl 99 -c 32768 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
+
+
+================================================================================
+Qwen 3.5 9B Uncensored (Q4_K_M) — High-Precision & Deep-Context Setup
+================================================================================
 65,536 (65k) — "High-Precision & High-Speed Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 65536 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 10
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 65536 -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 -cnv
 
 131,072 (132k) — "High-Precision & High-Speed Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 131072 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 131072 -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 10
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 131072 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 131072 -fa on -ctk q8_0 -ctv q4_0 -t 8 -tb 8 -cnv
 
 196,608 (196k) — "Deep-Context & Long-Horizon Setup (9B)"
-./llama-server.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf --port 8080 -ngl 99 -c 196608 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Qwen3.5-9B\Qwen3.5-9B-Q4_K_M.gguf -ngl 99 -c 196608 -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --port 8080 -ngl 99 -c 196608 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
+./llama-cli.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf -ngl 99 -c 196608 -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 -cnv
 
-Qwen 3.8 27B Uncensored Cyber (IQ4_XS) — 65,536 (65k) "Hybrid Offload + MTP Speculative Setup"
-./llama-server.exe -m model\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf --port 8080 -ngl 26 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --parallel 1 --cont-batching --jinja --spec-type draft-mtp --spec-draft-n-max 2
-./llama-cli.exe -m model\Qwen3.8-27B-Uncensored-Cyber-i1-GGUF\Qwen3.8-27B-Uncensored-Cyber.i1-IQ4_XS.gguf -ngl 27 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 10 --jinja --spec-type draft-mtp --spec-draft-n-max 2 -cnv
+Vision / Multimodal (with mmproj):
+./llama-server.exe -m model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf --mmproj model\Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf --port 8080 -ngl 99 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q8_0 -ctv q8_0 -t 8 -tb 8 --parallel 1 --cont-batching --jinja --cache-reuse 256
 
-Ornith 1.5 35B A3B Abliterated (IQ3_M) — 65,536 (65k) "Hybrid Offload + MoE CPU Setup"
-./llama-server.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf --port 8080 -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 --parallel 1 --cont-batching --jinja
-./llama-cli.exe -m model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf -ngl 28 -c 65536 -b 2048 -ub 1024 --no-mmap -fa on -ctk q4_0 -ctv q4_0 -t 8 -tb 8 --n-cpu-moe 27 -cnv
+
+================================================================================
+Nomic Embed Text v1.5 (Q8_0) — Dedicated Embedding Server (Port 8081)
+================================================================================
+./llama-server.exe -m model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q8_0.gguf --port 8081 -ngl 99 -c 8192 -b 1024 -ub 1024 --embedding --pooling cls --parallel 4 --cont-batching
