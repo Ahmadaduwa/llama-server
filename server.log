@@ -128074,3 +128074,62 @@ asyncio.exceptions.CancelledError
 [2026-09-08 19:07:22] INFO: Application shutdown complete.
 [2026-09-08 19:07:22] INFO: Finished server process [130908]
 [2026-09-08 19:07:22] INFO: Finished server process [130908]
+[2026-09-08 19:27:40] 🔥 Starting Smart LLM Gateway
+[2026-09-08 19:27:41] 🌐 Gateway: 0.0.0.0:11434
+[2026-09-08 19:27:41] 🤖 LLM llama-server: http://127.0.0.1:8080
+[2026-09-08 19:27:41] 🧠 Embedding llama-server: http://127.0.0.1:8081
+[2026-09-08 19:27:41] 🧠 Initializing embedding llama-server...
+[2026-09-08 19:27:46] 🧠 Starting embedding llama-server
+[2026-09-08 19:27:46]    Model: D:\Program\llama-b10054-bin-win-cuda-13.3-x64\model\nomic-embed-text-v1.5-GGUF\nomic-embed-text-v1.5.Q5_0.gguf
+[2026-09-08 19:27:46]    Port: 8081
+[2026-09-08 19:27:48] ✅ Embedding server ready on :8081
+[2026-09-08 19:27:48] ✅ Embedding backend ready
+[2026-09-08 19:27:48] 📡 LLM upstream: http://127.0.0.1:8080
+[2026-09-08 19:27:48] 🧠 Embedding upstream: http://127.0.0.1:8081
+[2026-09-08 19:27:48] 📁 Local LLM log: llama-server.log
+[2026-09-08 19:27:49] 📁 Local embedding log: D:\Projects\llama-server\embedding-server.log
+[2026-09-08 19:27:49] INFO: Application startup complete.
+[2026-09-08 19:27:49] INFO: Application startup complete.
+[2026-09-08 19:27:49] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-08 19:27:49] INFO: Uvicorn running on http://0.0.0.0:11434 (Press CTRL+C to quit)
+[2026-09-08 19:28:03] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-08 19:28:05] 📤 [100.124.101.126] Embedding completed in 2.12s status=200
+[2026-09-08 19:28:05] INFO: 100.124.101.126:51042 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-08 19:28:33] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-08 19:28:33] 🚀 Loading LLM [Ornith-1.5-35B-IQ3-65k] on port 8080
+[2026-09-08 19:28:51] ✅ LLM [Ornith-1.5-35B-IQ3-65k] ready in 14s
+[2026-09-08 19:28:51] INFO: 100.124.101.126:51124 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-08 19:29:44] 📤 [100.124.101.126] Stream completed v1/chat/completions in 71.04s
+[2026-09-08 19:29:44] INFO: 100.124.101.126:51620 - "GET /metrics HTTP/1.1" 200
+[2026-09-08 19:29:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-08 19:29:44] 📤 [100.124.101.126] Embedding completed in 0.18s status=200
+[2026-09-08 19:29:45] INFO: 100.124.101.126:51624 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-08 19:30:05] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-08 19:30:05] 📤 [100.124.101.126] Embedding completed in 0.17s status=200
+[2026-09-08 19:30:05] INFO: 100.124.101.126:41284 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-08 19:30:05] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-08 19:30:05] INFO: 100.124.101.126:41296 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-08 19:30:58] 📤 [100.124.101.126] Stream completed v1/chat/completions in 53.06s
+[2026-09-08 19:30:58] INFO: 100.124.101.126:48294 - "GET /metrics HTTP/1.1" 200
+[2026-09-08 19:31:10] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-08 19:31:10] INFO: 100.124.101.126:45764 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-08 19:33:01] 📤 [100.124.101.126] Stream completed v1/chat/completions in 110.36s
+[2026-09-08 19:33:01] INFO: 100.124.101.126:43680 - "GET /metrics HTTP/1.1" 200
+[2026-09-08 19:33:01] 📤 [100.124.101.126] Completed props in 0.01s
+[2026-09-08 19:33:01] INFO: 100.124.101.126:43688 - "GET /props HTTP/1.1" 200
+[2026-09-08 19:33:01] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-08 19:33:01] INFO: 100.124.101.126:43704 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-08 19:33:44] 📤 [100.124.101.126] Stream completed v1/chat/completions in 42.68s
+[2026-09-08 19:33:44] INFO: 100.124.101.126:38588 - "GET /metrics HTTP/1.1" 200
+[2026-09-08 19:33:44] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-08 19:33:44] 📤 [100.124.101.126] Embedding completed in 0.16s status=200
+[2026-09-08 19:33:44] INFO: 100.124.101.126:38604 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-08 19:33:45] 📥 [100.124.101.126] Embedding request [nomic-embed-text]
+[2026-09-08 19:33:45] 📤 [100.124.101.126] Embedding completed in 0.08s status=200
+[2026-09-08 19:33:45] INFO: 100.124.101.126:38604 - "POST /v1/embeddings HTTP/1.1" 200
+[2026-09-08 19:33:45] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-08 19:33:45] INFO: 100.124.101.126:38610 - "POST /v1/chat/completions HTTP/1.1" 200
+[2026-09-08 19:34:54] 📤 [100.124.101.126] Stream completed v1/chat/completions in 69.51s
+[2026-09-08 19:34:55] INFO: 100.124.101.126:38346 - "GET /metrics HTTP/1.1" 200
+[2026-09-08 19:34:58] 📥 [100.124.101.126] Incoming v1/chat/completions for [Ornith-1.5-35B-IQ3-65k] (stream=True)
+[2026-09-08 19:34:58] INFO: 100.124.101.126:37658 - "POST /v1/chat/completions HTTP/1.1" 200

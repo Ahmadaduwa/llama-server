@@ -432,9 +432,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.6-35B-32k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b}" '
             f"--port {LLM_PORT} "
@@ -451,9 +449,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.6-35B-16k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b}" '
             f"--port {LLM_PORT} "
@@ -470,9 +466,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
 
             # === Qwen 3.6 35B A3B Uncensored (IQ3_M) ===
             "Qwen3.6-35B-IQ3-65k": f'& "{self.exe}" '
@@ -492,9 +486,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.6-35B-IQ3-32k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b_iq3}" '
             f"--port {LLM_PORT} "
@@ -511,9 +503,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.6-35B-IQ3-16k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b_iq3}" '
             f"--port {LLM_PORT} "
@@ -530,9 +520,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
 
             # === Ornith 1.5 35B A3B Abliterated (IQ4_XS) ===
             "Ornith-1.5-35B-65k": f'& "{self.exe}" '
@@ -552,9 +540,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Ornith-1.5-35B-32k": f'& "{self.exe}" '
             f'-m "{model_ornith_35b}" '
             f"--port {LLM_PORT} "
@@ -571,9 +557,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Ornith-1.5-35B-16k": f'& "{self.exe}" '
             f'-m "{model_ornith_35b}" '
             f"--port {LLM_PORT} "
@@ -590,9 +574,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
 
             # === Ornith 1.5 35B A3B Abliterated (IQ3_M) ===
             "Ornith-1.5-35B-IQ3-65k": f'& "{self.exe}" '
@@ -612,9 +594,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Ornith-1.5-35B-IQ3-32k": f'& "{self.exe}" '
             f'-m "{model_ornith_35b_iq3}" '
             f"--port {LLM_PORT} "
@@ -631,9 +611,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Ornith-1.5-35B-IQ3-16k": f'& "{self.exe}" '
             f'-m "{model_ornith_35b_iq3}" '
             f"--port {LLM_PORT} "
@@ -650,9 +628,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
 
             # === Ornith 1.5 9B Uncensored i1 (Q5_K_M) ===
             "Ornith-1.5-9B-i1-65k": f'& "{self.exe}" '
@@ -672,9 +648,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Ornith-1.5-9B-i1-32k": f'& "{self.exe}" '
             f'-m "{model_ornith_9b_i1}" '
             f"--port {LLM_PORT} "
@@ -691,9 +665,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
 
             # === Qwen 3.5 9B Uncensored (Q4_K_M) ===
             "Qwen3.5-9B-192k-uncen": f'& "{self.exe}" '
@@ -713,9 +685,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.5-9B-132k-uncen": f'& "{self.exe}" '
             f'-m "{model_9b_uncen}" '
             f"--port {LLM_PORT} "
@@ -733,9 +703,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.5-9B-65k-uncen": f'& "{self.exe}" '
             f'-m "{model_9b_uncen}" '
             f"--port {LLM_PORT} "
@@ -753,9 +721,7 @@ class SmartLLMManager:
             "--cont-batching "
             "--jinja "
             "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
             "Qwen3.5-9B-32k-uncen": f'& "{self.exe}" '
             f'-m "{model_9b_uncen}" '
             f"--port {LLM_PORT} "
@@ -772,9 +738,7 @@ class SmartLLMManager:
             "--parallel 1 "
             "--cont-batching "
             "--jinja "
-            "--cache-reuse 256 "
-            "--spec-type ngram-simple "
-            "--spec-draft-n-max 3",
+            "--cache-reuse 256",
         }
 
         # ----------------------------------------------------
