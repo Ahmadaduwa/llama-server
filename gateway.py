@@ -343,70 +343,28 @@ class SmartLLMManager:
         # PATH
         # ----------------------------------------------------
 
-        self.base_dir = "D:\\Program\\llama-b10054-bin-win-cuda-13.3-x64"
+        self.base_dir = os.getenv("LLAMA_BASE_DIR", "D:\\Program\\llama")
 
         self.exe = os.path.join(self.base_dir, "llama-server.exe")
 
         # ----------------------------------------------------
-        # MODELS
+        # MODELS (Qwen only; Nomic embedding is managed separately)
         # ----------------------------------------------------
 
-        # 1. Qwen 3.6 35B A3B Uncensored (MoE, IQ4_XS & IQ3_M)
+        # 1. Qwen 3.6 35B A3B Abliterated Heretic (MoE, IQ4_XS)
         model_qwen_35b = os.path.join(
             self.base_dir,
             "model\\"
-            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\\"
-            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf",
+            "Qwen3.6-35B-A3B-Abliterated-Heretic-BF16-i1-GGUF\\"
+            "Qwen3.6-35B-A3B-Abliterated-Heretic-BF16.i1-IQ4_XS.gguf",
         )
 
-        model_qwen_35b_iq3 = os.path.join(
+        # 2. DeepSeek-V4-Pro Qwen 3.5 9B Abliterated (Dense, IQ4_XS)
+        model_qwen_9b = os.path.join(
             self.base_dir,
             "model\\"
-            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\\"
-            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf",
-        )
-
-        mmproj_qwen_35b = os.path.join(
-            self.base_dir,
-            "model\\"
-            "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\\"
-            "mmproj-Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-f16.gguf",
-        )
-
-        # 2. Ornith 1.5 35B A3B Abliterated (MoE, IQ4_XS & IQ3_M)
-        model_ornith_35b = os.path.join(
-            self.base_dir,
-            "model\\"
-            "Ornith-1.5-35B-A3B-abliterated-i1-GGUF\\"
-            "Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf",
-        )
-
-        model_ornith_35b_iq3 = os.path.join(
-            self.base_dir,
-            "model\\"
-            "Ornith-1.5-35B-A3B-abliterated-i1-GGUF\\"
-            "Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf",
-        )
-
-        # 3. Ornith 1.5 9B Uncensored (Dense, Q5_K_M)
-        model_ornith_9b_i1 = os.path.join(
-            self.base_dir,
-            "model\\Ornith-1.5-9B-uncensored-i1-GGUF\\Ornith-1.5-9B-uncensored.i1-Q5_K_M.gguf",
-        )
-
-        # 4. Qwen 3.5 9B Uncensored (Dense, Q4_K_M)
-        model_9b_uncen = os.path.join(
-            self.base_dir,
-            "model\\"
-            "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\\"
-            "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-Q4_K_M.gguf",
-        )
-
-        mmproj_9b_uncen = os.path.join(
-            self.base_dir,
-            "model\\"
-            "Qwen3.5-9B-Uncensored-HauhauCS-Aggressive\\"
-            "mmproj-Qwen3.5-9B-Uncensored-HauhauCS-Aggressive-BF16.gguf",
+            "DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated-i1-GGUF\\"
+            "DeepSeek-V4-Pro-Qwen3.5-9B-Tema_Q-Abliterated.i1-IQ4_XS.gguf",
         )
 
         # ----------------------------------------------------
@@ -414,40 +372,37 @@ class SmartLLMManager:
         # ----------------------------------------------------
 
         self.configs = {
-            # === Qwen 3.6 35B A3B Uncensored (IQ4_XS) ===
+            # === Qwen 3.6 35B A3B Abliterated (IQ4_XS) ===
             "Qwen3.6-35B-65k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b}" '
             f"--port {LLM_PORT} "
             "-ngl 28 "
             "-c 65536 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
+            "-np 1 "
+            "-b 1024 "
+            "-ub 512 "
+            "-fa 1 "
             "-ctk q8_0 "
             "-ctv q8_0 "
             "-t 6 "
-            "-tb 6 "
+            "-tb 8 "
             "--n-cpu-moe 28 "
-            "--parallel 3 "
-            "--cont-batching "
             "--jinja "
-            "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
             "Qwen3.6-35B-32k": f'& "{self.exe}" '
             f'-m "{model_qwen_35b}" '
             f"--port {LLM_PORT} "
             "-ngl 28 "
             "-c 32768 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
+            "-np 1 "
+            "-b 1024 "
+            "-ub 512 "
+            "-fa 1 "
             "-ctk q8_0 "
             "-ctv q8_0 "
             "-t 6 "
-            "-tb 6 "
+            "-tb 8 "
             "--n-cpu-moe 28 "
-            "--parallel 1 "
-            "--cont-batching "
             "--jinja "
             "--cache-reuse 256",
             "Qwen3.6-35B-16k": f'& "{self.exe}" '
@@ -455,227 +410,27 @@ class SmartLLMManager:
             f"--port {LLM_PORT} "
             "-ngl 28 "
             "-c 16384 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
+            "-np 1 "
+            "-b 1024 "
+            "-ub 512 "
+            "-fa 1 "
             "-ctk q8_0 "
             "-ctv q8_0 "
             "-t 6 "
-            "-tb 6 "
+            "-tb 8 "
             "--n-cpu-moe 28 "
-            "--parallel 1 "
-            "--cont-batching "
             "--jinja "
             "--cache-reuse 256",
 
-            # === Qwen 3.6 35B A3B Uncensored (IQ3_M) ===
-            "Qwen3.6-35B-IQ3-65k": f'& "{self.exe}" '
-            f'-m "{model_qwen_35b_iq3}" '
-            f"--port {LLM_PORT} "
-            "-ngl 30 "
-            "-c 65536 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 26 "
-            "--parallel 3 "
-            "--cont-batching "
-            "--jinja "
-            "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256",
-            "Qwen3.6-35B-IQ3-32k": f'& "{self.exe}" '
-            f'-m "{model_qwen_35b_iq3}" '
-            f"--port {LLM_PORT} "
-            "-ngl 30 "
-            "-c 32768 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 26 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-            "Qwen3.6-35B-IQ3-16k": f'& "{self.exe}" '
-            f'-m "{model_qwen_35b_iq3}" '
-            f"--port {LLM_PORT} "
-            "-ngl 30 "
-            "-c 16384 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 26 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-
-            # === Ornith 1.5 35B A3B Abliterated (IQ4_XS) ===
-            "Ornith-1.5-35B-65k": f'& "{self.exe}" '
-            f'-m "{model_ornith_35b}" '
-            f"--port {LLM_PORT} "
-            "-ngl 28 "
-            "-c 65536 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 28 "
-            "--parallel 3 "
-            "--cont-batching "
-            "--jinja "
-            "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256",
-            "Ornith-1.5-35B-32k": f'& "{self.exe}" '
-            f'-m "{model_ornith_35b}" '
-            f"--port {LLM_PORT} "
-            "-ngl 28 "
-            "-c 32768 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 28 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-            "Ornith-1.5-35B-16k": f'& "{self.exe}" '
-            f'-m "{model_ornith_35b}" '
-            f"--port {LLM_PORT} "
-            "-ngl 28 "
-            "-c 16384 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 28 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-
-            # === Ornith 1.5 35B A3B Abliterated (IQ3_M) ===
-            "Ornith-1.5-35B-IQ3-65k": f'& "{self.exe}" '
-            f'-m "{model_ornith_35b_iq3}" '
-            f"--port {LLM_PORT} "
-            "-ngl 30 "
-            "-c 65536 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 26 "
-            "--parallel 3 "
-            "--cont-batching "
-            "--jinja "
-            "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256",
-            "Ornith-1.5-35B-IQ3-32k": f'& "{self.exe}" '
-            f'-m "{model_ornith_35b_iq3}" '
-            f"--port {LLM_PORT} "
-            "-ngl 30 "
-            "-c 32768 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 26 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-            "Ornith-1.5-35B-IQ3-16k": f'& "{self.exe}" '
-            f'-m "{model_ornith_35b_iq3}" '
-            f"--port {LLM_PORT} "
-            "-ngl 30 "
-            "-c 16384 "
-            "-b 2048 "
-            "-ub 1024 "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--n-cpu-moe 26 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-
-            # === Ornith 1.5 9B Uncensored i1 (Q5_K_M) ===
-            "Ornith-1.5-9B-i1-65k": f'& "{self.exe}" '
-            f'-m "{model_ornith_9b_i1}" '
-            f"--port {LLM_PORT} "
-            "-ngl 99 "
-            "-c 65536 "
-            "-b 2048 "
-            "-ub 1024 "
-            "--no-mmap "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--parallel 3 "
-            "--cont-batching "
-            "--jinja "
-            "--slot-prompt-similarity 0.5 "
-            "--cache-reuse 256",
-            "Ornith-1.5-9B-i1-32k": f'& "{self.exe}" '
-            f'-m "{model_ornith_9b_i1}" '
-            f"--port {LLM_PORT} "
-            "-ngl 99 "
-            "-c 32768 "
-            "-b 2048 "
-            "-ub 1024 "
-            "--no-mmap "
-            "-fa on "
-            "-ctk q8_0 "
-            "-ctv q8_0 "
-            "-t 6 "
-            "-tb 6 "
-            "--parallel 1 "
-            "--cont-batching "
-            "--jinja "
-            "--cache-reuse 256",
-
-            # === Qwen 3.5 9B Uncensored (Q4_K_M) ===
-            "Qwen3.5-9B-192k-uncen": f'& "{self.exe}" '
-            f'-m "{model_9b_uncen}" '
+            # === DeepSeek-V4-Pro Qwen 3.5 9B Abliterated (IQ4_XS) ===
+            "Qwen3.5-9B-192k": f'& "{self.exe}" '
+            f'-m "{model_qwen_9b}" '
             f"--port {LLM_PORT} "
             "-ngl 99 "
             "-c 196608 "
             "-b 2048 "
             "-ub 1024 "
-            "--no-mmap "
+            "--load-mode none "
             "-fa on "
             "-ctk q4_0 "
             "-ctv q4_0 "
@@ -686,14 +441,14 @@ class SmartLLMManager:
             "--jinja "
             "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
-            "Qwen3.5-9B-132k-uncen": f'& "{self.exe}" '
-            f'-m "{model_9b_uncen}" '
+            "Qwen3.5-9B-132k": f'& "{self.exe}" '
+            f'-m "{model_qwen_9b}" '
             f"--port {LLM_PORT} "
             "-ngl 99 "
             "-c 131072 "
             "-b 2048 "
             "-ub 1024 "
-            "--no-mmap "
+            "--load-mode none "
             "-fa on "
             "-ctk q4_0 "
             "-ctv q4_0 "
@@ -704,14 +459,14 @@ class SmartLLMManager:
             "--jinja "
             "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
-            "Qwen3.5-9B-65k-uncen": f'& "{self.exe}" '
-            f'-m "{model_9b_uncen}" '
+            "Qwen3.5-9B-65k": f'& "{self.exe}" '
+            f'-m "{model_qwen_9b}" '
             f"--port {LLM_PORT} "
             "-ngl 99 "
             "-c 65536 "
             "-b 2048 "
             "-ub 1024 "
-            "--no-mmap "
+            "--load-mode none "
             "-fa on "
             "-ctk q8_0 "
             "-ctv q8_0 "
@@ -722,14 +477,14 @@ class SmartLLMManager:
             "--jinja "
             "--slot-prompt-similarity 0.5 "
             "--cache-reuse 256",
-            "Qwen3.5-9B-32k-uncen": f'& "{self.exe}" '
-            f'-m "{model_9b_uncen}" '
+            "Qwen3.5-9B-32k": f'& "{self.exe}" '
+            f'-m "{model_qwen_9b}" '
             f"--port {LLM_PORT} "
             "-ngl 99 "
             "-c 32768 "
             "-b 2048 "
             "-ub 1024 "
-            "--no-mmap "
+            "--load-mode none "
             "-fa on "
             "-ctk q8_0 "
             "-ctv q8_0 "
@@ -752,56 +507,21 @@ class SmartLLMManager:
             "qwen3.6-35b-32k": "Qwen3.6-35B-32k",
             "qwen3.6-35b-16k": "Qwen3.6-35B-16k",
             "qwen3.6-35b-iq4": "Qwen3.6-35B-65k",
+            "qwen3.6-35b-a3b-abliterated": "Qwen3.6-35B-65k",
             "qwen-35b": "Qwen3.6-35B-65k",
             "qwen3.6": "Qwen3.6-35B-65k",
             "35b": "Qwen3.6-35B-65k",
 
-            # Qwen 3.6 35B (IQ3)
-            "qwen3.6-35b-iq3": "Qwen3.6-35B-IQ3-65k",
-            "qwen3.6-35b-iq3-65k": "Qwen3.6-35B-IQ3-65k",
-            "qwen3.6-35b-iq3-32k": "Qwen3.6-35B-IQ3-32k",
-            "qwen3.6-35b-iq3-16k": "Qwen3.6-35B-IQ3-16k",
-            "qwen-35b-iq3": "Qwen3.6-35B-IQ3-65k",
-            "35b-iq3": "Qwen3.6-35B-IQ3-65k",
-
-            # Ornith 1.5 35B (IQ4)
-            "ornith-1.5-35b": "Ornith-1.5-35B-65k",
-            "ornith-1.5-35b-65k": "Ornith-1.5-35B-65k",
-            "ornith-1.5-35b-32k": "Ornith-1.5-35B-32k",
-            "ornith-1.5-35b-16k": "Ornith-1.5-35B-16k",
-            "ornith-1.5-35b-iq4": "Ornith-1.5-35B-65k",
-            "ornith-35b": "Ornith-1.5-35B-65k",
-            "ornith-1.5-35b-a3b": "Ornith-1.5-35B-65k",
-            "ornith-35b-a3b": "Ornith-1.5-35B-65k",
-            "ornith-1.5-35b-a3b-abliterated": "Ornith-1.5-35B-65k",
-
-            # Ornith 1.5 35B (IQ3)
-            "ornith-1.5-35b-iq3": "Ornith-1.5-35B-IQ3-65k",
-            "ornith-1.5-35b-iq3-65k": "Ornith-1.5-35B-IQ3-65k",
-            "ornith-1.5-35b-iq3-32k": "Ornith-1.5-35B-IQ3-32k",
-            "ornith-1.5-35b-iq3-16k": "Ornith-1.5-35B-IQ3-16k",
-            "ornith-35b-iq3": "Ornith-1.5-35B-IQ3-65k",
-            "ornith-1.5-35b-a3b-iq3": "Ornith-1.5-35B-IQ3-65k",
-            "ornith-35b-a3b-iq3": "Ornith-1.5-35B-IQ3-65k",
-
-            # Ornith 1.5 9B
-            "ornith-1.5-9b": "Ornith-1.5-9B-i1-65k",
-            "ornith-1.5-9b-i1": "Ornith-1.5-9B-i1-65k",
-            "ornith-1.5-9b-65k": "Ornith-1.5-9B-i1-65k",
-            "ornith-1.5-9b-32k": "Ornith-1.5-9B-i1-32k",
-            "ornith-9b": "Ornith-1.5-9B-i1-65k",
-            "ornith": "Ornith-1.5-9B-i1-65k",
-
             # Qwen 3.5 9B
-            "qwen3.5-9b": "Qwen3.5-9B-65k-uncen",
-            "qwen3.5-9b-uncen": "Qwen3.5-9B-65k-uncen",
-            "qwen3.5-9b-65k": "Qwen3.5-9B-65k-uncen",
-            "qwen3.5-9b-32k": "Qwen3.5-9B-32k-uncen",
-            "qwen3.5-9b-132k": "Qwen3.5-9B-132k-uncen",
-            "qwen3.5-9b-192k": "Qwen3.5-9B-192k-uncen",
-            "qwen-9b": "Qwen3.5-9B-65k-uncen",
-            "9b": "Qwen3.5-9B-65k-uncen",
-            "qwen": "Qwen3.5-9B-65k-uncen",
+            "qwen3.5-9b": "Qwen3.5-9B-65k",
+            "qwen3.5-9b-uncen": "Qwen3.5-9B-65k",
+            "qwen3.5-9b-65k": "Qwen3.5-9B-65k",
+            "qwen3.5-9b-32k": "Qwen3.5-9B-32k",
+            "qwen3.5-9b-132k": "Qwen3.5-9B-132k",
+            "qwen3.5-9b-192k": "Qwen3.5-9B-192k",
+            "qwen-9b": "Qwen3.5-9B-65k",
+            "9b": "Qwen3.5-9B-65k",
+            "qwen": "Qwen3.5-9B-65k",
         }
 
         self.LOAD_TIMEOUT_SECONDS = int(os.getenv("GATEWAY_LOAD_TIMEOUT", "180"))
@@ -929,7 +649,7 @@ class SmartLLMManager:
                     if "35b" in clean_name.lower():
                         clean_name = "Qwen3.6-35B-65k"
                     else:
-                        clean_name = "Qwen3.5-9B-65k-uncen"
+                        clean_name = "Qwen3.5-9B-65k"
 
                     ts_print(f"⚠️ Unknown model '{model_name}' → defaulting to {clean_name}")
 
@@ -1149,7 +869,7 @@ class EmbeddingServerManager:
         self.process = None
         self.lock = asyncio.Lock()
 
-        self.base_dir = "D:\\Program\\llama-b10054-bin-win-cuda-13.3-x64"
+        self.base_dir = os.getenv("LLAMA_BASE_DIR", "D:\\Program\\llama")
 
         self.exe = os.path.join(self.base_dir, "llama-server.exe")
 
@@ -1373,36 +1093,15 @@ def _model_meta(name):
 
     if "35B" in name:
         param = "35B"
-        size = 15440519296 if ("IQ3" in name or "iq3" in name.lower()) else 18728778656
-
-    elif "27B" in name:
-        param = "27B"
-        size = 15309040064
-
-    elif "4B" in name:
-        param = "4B"
-        size = 2707513696
+        size = 18728778656
+        quant = "IQ4_XS"
 
     else:
         param = "9B"
-        size = 6467970496 if ("Q5" in name or "Ornith" in name) else 5627044224
-
-    if "IQ3" in name or "iq3" in name.lower():
-        quant = "IQ3_M"
-
-    elif "35B" in name or "IQ4_XS" in name or "iq4" in name.lower():
+        size = 5326422016
         quant = "IQ4_XS"
 
-    elif "i1" in name.lower() or "Q5_K_M" in name or "q5" in name.lower():
-        quant = "Q5_K_M"
-
-    elif "Q8_0" in name or "q8" in name.lower():
-        quant = "Q8_0"
-
-    else:
-        quant = "Q4_K_M"
-
-    family = "qwen2" if ("Qwen" in name or "Ornith" in name) else "llama"
+    family = "qwen2"
 
     return (param, size, quant, family)
 
@@ -1927,6 +1626,78 @@ def _recover_content_from_reasoning(resp_json):
 
 
 # ============================================================
+# OLLAMA REQUEST TRANSLATION
+# ============================================================
+
+# Ollama "options" key → llama-server top-level field
+
+OLLAMA_OPTION_MAP = {
+    "temperature": "temperature",
+    "top_p": "top_p",
+    "top_k": "top_k",
+    "min_p": "min_p",
+    "seed": "seed",
+    "stop": "stop",
+    "repeat_penalty": "repeat_penalty",
+    "presence_penalty": "presence_penalty",
+    "frequency_penalty": "frequency_penalty",
+}
+
+
+def _translate_ollama_request(req_data, path, is_stream):
+
+    # Ollama sends sampling settings inside "options";
+    # llama-server only reads them at the top level.
+
+    options = req_data.get("options")
+
+    if isinstance(options, dict):
+        for src, dst in OLLAMA_OPTION_MAP.items():
+            if options.get(src) is not None:
+                req_data[dst] = options[src]
+
+        num_predict = options.get("num_predict")
+
+        if isinstance(num_predict, int) and num_predict > 0:
+            req_data["max_tokens"] = num_predict
+
+    # Thinking is off unless the client sends "think": true.
+    # Otherwise reasoning eats the whole num_predict budget and
+    # the answer comes back empty or as reasoning text.
+
+    think = req_data.get("think")
+
+    if isinstance(think, str):
+        think = think.strip().lower() not in ("", "false", "none", "off", "0")
+
+    kwargs = req_data.get("chat_template_kwargs")
+
+    if not isinstance(kwargs, dict):
+        kwargs = {}
+
+    kwargs.setdefault("enable_thinking", bool(think))
+
+    req_data["chat_template_kwargs"] = kwargs
+
+    # Non-stream /api/generate goes to /v1/chat/completions so the
+    # model's chat template is applied and "system" is honoured.
+
+    if path == "api/generate" and not is_stream:
+        messages = []
+
+        system = req_data.pop("system", None)
+
+        if system:
+            messages.append({"role": "system", "content": str(system)})
+
+        messages.append({"role": "user", "content": str(req_data.pop("prompt", "") or "")})
+
+        req_data["messages"] = messages
+
+    return req_data
+
+
+# ============================================================
 # GENERATION PROXY
 # ============================================================
 
@@ -1984,23 +1755,6 @@ async def proxy_to_llm(path: str, request: Request):
         else "Qwen3.6-35B-65k"
     )
 
-    if is_chat and request.method == "POST":
-        manager.active_requests += 1
-
-        counted = True
-
-        update_status("busy", {"active_requests": manager.active_requests})
-
-        ts_print(f"📥 [{client_ip}] Incoming {path} for [{requested_model}] (stream={is_stream})")
-
-        try:
-            await manager.ensure_model(requested_model)
-
-        except Exception as e:
-            ts_print(f"❌ Error ensuring model: {e}")
-
-            await manager.ensure_model("Qwen3.6-35B-65k")
-
     def _release():
 
         nonlocal counted
@@ -2016,6 +1770,32 @@ async def proxy_to_llm(path: str, request: Request):
 
             update_status(status_str, {"active_requests": manager.active_requests})
 
+    if is_chat and request.method == "POST":
+        manager.active_requests += 1
+
+        counted = True
+
+        update_status("busy", {"active_requests": manager.active_requests})
+
+        ts_print(f"📥 [{client_ip}] Incoming {path} for [{requested_model}] (stream={is_stream})")
+
+        # If loading fails twice or the client disconnects while the model
+        # is loading, release the count; a leaked count blocks idle unload.
+
+        try:
+            try:
+                await manager.ensure_model(requested_model)
+
+            except Exception as e:
+                ts_print(f"❌ Error ensuring model: {e}")
+
+                await manager.ensure_model("Qwen3.6-35B-65k")
+
+        except BaseException:
+            _release()
+
+            raise
+
     # --------------------------------------------------------
     # Rewrite body
     # --------------------------------------------------------
@@ -2026,6 +1806,9 @@ async def proxy_to_llm(path: str, request: Request):
         try:
             if "model" in req_data:
                 req_data["model"] = "default"
+
+            if is_ollama:
+                _translate_ollama_request(req_data, path, is_stream)
 
             req_data.setdefault("top_p", 0.8)
 
@@ -2062,7 +1845,9 @@ async def proxy_to_llm(path: str, request: Request):
         target_path = "v1/chat/completions"
 
     elif path == "api/generate":
-        target_path = "v1/completions"
+        # Non-stream generate uses the chat endpoint (see _translate_ollama_request);
+        # streaming generate keeps the raw completion endpoint.
+        target_path = "v1/completions" if is_stream else "v1/chat/completions"
 
     url = f"{UPSTREAM}/{target_path}"
 
@@ -2122,14 +1907,21 @@ async def proxy_to_llm(path: str, request: Request):
 
                 ts_print(f"📤 [{client_ip}] Completed {path} in {elapsed:.2f}s")
 
-                return JSONResponse(
-                    {
-                        "model": manager.current_model,
-                        "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
-                        "message": {"role": "assistant", "content": content},
-                        "done": True,
-                    }
-                )
+                ollama_resp = {
+                    "model": manager.current_model,
+                    "created_at": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
+                    "message": {"role": "assistant", "content": content},
+                    "done": True,
+                }
+
+                # Ollama's generate API returns the text in "response", not "message".
+
+                if path == "api/generate":
+                    del ollama_resp["message"]
+
+                    ollama_resp["response"] = content
+
+                return JSONResponse(ollama_resp)
 
             resp_json = _recover_content_from_reasoning(r.json())
 

@@ -1,0 +1,22 @@
+### หาช่องโหว่ตามประเภท Owasp top 10 หรือ ช้องโหว่ที่ต้องการ
+
+POST https://www.cve.org/restapiv1/search HTTP/1.1
+Content-Type: application/json
+
+{
+    "query": "xxs",
+    "from": 0,
+    "size": 25,
+    "sort": {
+        "property": "cveId",
+        "order": "desc"
+    }
+}
+
+###
+
+# @name nvdData
+GET https://services.nvd.nist.gov/rest/json/cves/2.0?resultsPerPage=20 HTTP/1.1
+
+###
+

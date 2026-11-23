@@ -20,32 +20,14 @@ import time
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 
-DEFAULT_BASE_DIR = r"D:\Program\llama-b10054-bin-win-cuda-13.3-x64"
+DEFAULT_BASE_DIR = r"D:\Program\llama"
 
 MODEL_CATALOG = {
-    "ornith-iq3": {
-        "name": "Ornith 1.5 35B (IQ3_M)",
-        "path": r"model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ3_M.gguf",
-        "default_ngl": [30, 32, 33, 34],
-        "default_moe": [22, 24, 26],
-    },
-    "ornith-iq4": {
-        "name": "Ornith 1.5 35B (IQ4_XS)",
-        "path": r"model\Ornith-1.5-35B-A3B-abliterated-i1-GGUF\Ornith-1.5-35B-A3B-abliterated.i1-IQ4_XS.gguf",
-        "default_ngl": [26, 28, 30],
-        "default_moe": [24, 26, 27],
-    },
-    "qwen-iq3": {
-        "name": "Qwen 3.6 35B (IQ3_M)",
-        "path": r"model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ3_M.gguf",
-        "default_ngl": [30, 32, 33, 34],
-        "default_moe": [22, 24, 26],
-    },
     "qwen-iq4": {
-        "name": "Qwen 3.6 35B (IQ4_XS)",
-        "path": r"model\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive\Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-IQ4_XS.gguf",
+        "name": "Qwen 3.6 35B A3B Abliterated Heretic (IQ4_XS)",
+        "path": r"model\Qwen3.6-35B-A3B-Abliterated-Heretic-BF16-i1-GGUF\Qwen3.6-35B-A3B-Abliterated-Heretic-BF16.i1-IQ4_XS.gguf",
         "default_ngl": [26, 28, 30],
-        "default_moe": [24, 26, 27],
+        "default_moe": [24, 26, 28],
     },
 }
 
@@ -307,8 +289,8 @@ def main():
     parser.add_argument(
         "--model",
         type=str,
-        default="ornith-iq3",
-        choices=["ornith-iq3", "ornith-iq4", "qwen-iq3", "qwen-iq4", "iq3", "iq4", "all"],
+        default="qwen-iq4",
+        choices=["qwen-iq4", "all"],
         help="Model or category to test",
     )
     parser.add_argument(
@@ -382,10 +364,6 @@ def main():
     models_to_test = []
     if args.model == "all":
         models_to_test = list(MODEL_CATALOG.keys())
-    elif args.model == "iq3":
-        models_to_test = ["ornith-iq3", "qwen-iq3"]
-    elif args.model == "iq4":
-        models_to_test = ["ornith-iq4", "qwen-iq4"]
     else:
         models_to_test = [args.model]
 
